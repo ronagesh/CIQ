@@ -2,13 +2,12 @@
 
 import { useEffect, useState, useRef } from 'react'
 import { useParams, useRouter } from 'next/navigation'
-import { ArrowLeft, AlertTriangle, CheckCircle, XCircle, ChevronDown, ChevronUp, Copy } from 'lucide-react'
+import { ArrowLeft, AlertTriangle, CheckCircle, XCircle, ChevronDown, ChevronUp, Copy, ImageIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { SeverityBadge } from '@/components/severity-badge'
 import { QuantBar } from '@/components/quant-bar'
-import type { Suggestion, QuantitativeScores } from '@/lib/types'
+import type { Suggestion, QuantitativeScores, ImageAnalysis } from '@/lib/types'
 
 interface Meta {
   product: {
@@ -40,12 +39,15 @@ export default function ReportPage() {
   const [markdown, setMarkdown] = useState<string | null>(null)
   const [generatingSummary, setGeneratingSummary] = useState(false)
   const [copied, setCopied] = useState(false)
+  const [imageAnalyses, setImageAnalyses] = useState<ImageAnalysis[]>([])
+  const [imageLoading, setImageLoading] = useState(true)
   const bufferRef = useRef('')
 
   useEffect(() => {
     if (!id) return
     bufferRef.current = ''
 
+    // Fetch text analysis (streaming)
     fetch(`/api/report/${id}`)
       .then(res => {
         const reader = res.body!.getReader()
@@ -72,10 +74,20 @@ export default function ReportPage() {
         return pump()
       })
       .catch(() => setStreaming(false))
+
+    // Fetch image analysis (parallel, independent)
+    fetch(`/api/images/${id}`)
+      .then(res => res.json())
+      .then(data => setImageAnalyses(data.analyses ?? []))
+      .catch(() => {})
+      .finally(() => setImageLoading(false))
   }, [id])
 
   const allReviewed = approvals.length > 0 && approvals.every(a => a !== 'pending')
   const approvedSuggestions = suggestions.filter((_, i) => approvals[i] === 'approved')
+
+  const productImageAnalysis = imageAnalyses.find(a => a.productId === id)
+  const competitorImageAnalyses = imageAnalyses.filter(a => a.productId !== id)
 
   const handleGenerateSummary = async () => {
     if (!meta || approvedSuggestions.length === 0) return
@@ -140,7 +152,8 @@ export default function ReportPage() {
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-8 space-y-6">
-        {/* Comparison table */}
+
+        {/* Content Scorecard */}
         <Card className="p-5">
           <h2 className="font-semibold text-slate-800 text-sm mb-4">Content Scorecard</h2>
           <div className="grid grid-cols-2 gap-x-8 gap-y-3">
@@ -176,10 +189,109 @@ export default function ReportPage() {
           </div>
         </Card>
 
-        {/* Suggestions */}
+        {/* Image Analysis */}
+        <Card className="p-5">
+          <div className="flex items-center gap-2 mb-4">
+            <ImageIcon className="w-4 h-4 text-slate-500" />
+            <h2 className="font-semibold text-slate-800 text-sm">Image Compliance</h2>
+            {imageLoading && (
+              <span className="text-xs text-slate-400 ml-1">analyzing images…</span>
+            )}
+          </div>
+
+          {imageLoading ? (
+            <div className="space-y-2">
+              {[...Array(3)].map((_, i) => (
+                <div key={i} className="h-16 bg-slate-100 rounded animate-pulse" />
+              ))}
+            </div>
+          ) : imageAnalyses.length === 0 ? (
+            <p className="text-xs text-slate-400">No images available to analyze.</p>
+          ) : (
+            <div className="space-y-5">
+              {/* Product image */}
+              {productImageAnalysis && (
+                <div>
+                  <div className="flex items-start gap-4">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={productImageAnalysis.imageUrl}
+                      alt="Product main image"
+                      className="w-20 h-20 object-contain border border-slate-200 rounded bg-white flex-shrink-0"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-2">
+                        <p className="text-xs font-semibold text-slate-700">Main Image</p>
+                        {productImageAnalysis.overallCompliant ? (
+                          <span className="text-xs text-emerald-600 flex items-center gap-1">
+                            <CheckCircle className="w-3 h-3" /> Compliant
+                          </span>
+                        ) : (
+                          <span className="text-xs text-red-600 flex items-center gap-1">
+                            <XCircle className="w-3 h-3" /> Issues found
+                          </span>
+                        )}
+                      </div>
+                      <div className="space-y-1">
+                        {productImageAnalysis.findings.map((f, i) => (
+                          <div key={i} className="flex items-start gap-2 text-xs">
+                            {f.compliant
+                              ? <CheckCircle className="w-3 h-3 text-emerald-500 flex-shrink-0 mt-0.5" />
+                              : <XCircle className="w-3 h-3 text-red-500 flex-shrink-0 mt-0.5" />
+                            }
+                            <span className={f.compliant ? 'text-slate-600' : 'text-slate-800'}>
+                              <span className="font-medium">{f.check}:</span> {f.detail}
+                              {f.suppressionRisk && !f.compliant && (
+                                <span className="ml-1 text-red-600 font-semibold">· Suppression risk</span>
+                              )}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                      {productImageAnalysis.suggestion && (
+                        <div className="mt-2 bg-amber-50 border border-amber-200 rounded p-2 text-xs text-amber-800">
+                          <span className="font-semibold">Suggested fix: </span>
+                          {productImageAnalysis.suggestion}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Competitor images */}
+              {competitorImageAnalyses.length > 0 && (
+                <div>
+                  <p className="text-xs font-medium text-slate-500 mb-3">Competitor Main Images</p>
+                  <div className="grid grid-cols-3 gap-3">
+                    {competitorImageAnalyses.map((a) => (
+                      <div key={a.productId} className="space-y-1.5">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={a.imageUrl}
+                          alt="Competitor image"
+                          className="w-full aspect-square object-contain border border-slate-200 rounded bg-white"
+                        />
+                        <div className="flex items-center gap-1">
+                          {a.overallCompliant
+                            ? <CheckCircle className="w-3 h-3 text-emerald-500 flex-shrink-0" />
+                            : <XCircle className="w-3 h-3 text-red-400 flex-shrink-0" />
+                          }
+                          <p className="text-xs text-slate-500 truncate">{a.competitorComparison}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+        </Card>
+
+        {/* Content Suggestions */}
         <div>
           <h2 className="font-semibold text-slate-800 text-sm mb-3">
-            Top 3 Suggestions
+            Top 3 Content Suggestions
             {streaming && suggestions.length === 0 && (
               <span className="ml-2 text-slate-400 font-normal">generating…</span>
             )}
@@ -199,7 +311,7 @@ export default function ReportPage() {
                     onClick={() => setExpandedIdx(isExpanded ? null : i)}
                   >
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 mb-1">
+                      <div className="flex items-center gap-2 mb-1 flex-wrap">
                         <span className="text-xs font-semibold text-slate-700 bg-slate-100 px-2 py-0.5 rounded">
                           {s.dimension}
                         </span>
@@ -214,12 +326,14 @@ export default function ReportPage() {
                       </div>
                       <p className="text-xs text-slate-600 line-clamp-1">{s.guidelineCitation}</p>
                     </div>
-                    {isExpanded ? <ChevronUp className="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5" /> : <ChevronDown className="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5" />}
+                    {isExpanded
+                      ? <ChevronUp className="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5" />
+                      : <ChevronDown className="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5" />
+                    }
                   </div>
 
                   {isExpanded && (
                     <div className="px-4 pb-4 space-y-4 border-t border-slate-100 pt-4">
-                      {/* Before / After */}
                       <div className="grid grid-cols-2 gap-3">
                         <div>
                           <p className="text-xs font-medium text-slate-500 mb-1.5">Before</p>
@@ -235,7 +349,6 @@ export default function ReportPage() {
                         </div>
                       </div>
 
-                      {/* Citations */}
                       <div className="space-y-2">
                         <div className="bg-blue-50 border border-blue-100 rounded p-3 text-xs text-blue-800 leading-relaxed">
                           <span className="font-semibold">Guideline: </span>{s.guidelineCitation}
@@ -245,7 +358,6 @@ export default function ReportPage() {
                         </div>
                       </div>
 
-                      {/* Approve / Reject */}
                       {state === 'pending' && (
                         <div className="flex gap-2 pt-1">
                           <Button

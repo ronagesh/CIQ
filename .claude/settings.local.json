@@ -22,7 +22,15 @@
       "Bash(npx tsc *)",
       "Bash(npm run *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(gh repo *)",
+      "Bash(vercel --version)",
+      "Bash(vercel link *)",
+      "Bash(vercel *)",
+      "Bash(curl -s -o /tmp/test_img.res \"https://storage.googleapis.com/ef-prod-gather-v2/storage/Amazon-US/resources/detail/2025/05/74964887d7212a6b8e9e7ba1694a22c1.res\")",
+      "Read(//tmp/**)",
+      "Bash(identify /tmp/test_img.res)",
+      "Bash(git push *)"
     ]
   }
 }

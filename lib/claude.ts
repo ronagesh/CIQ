@@ -1,6 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { STYLE_GUIDE } from './style-guide'
-import type { Product, IssueCard, Suggestion, QuantitativeScores } from './types'
+import type { Product, IssueCard, Suggestion, QuantitativeScores, ImageAnalysis } from './types'
 import { getQuantitativeScores } from './products'
 
 const client = new Anthropic()
@@ -162,7 +162,96 @@ export async function streamAnalysis(
   })
 }
 
-// ── 4. Summary ─────────────────────────────────────────────────────────────────
+// ── 4. Image Analysis ─────────────────────────────────────────────────────────
+
+async function fetchImageAsBase64(url: string): Promise<string | null> {
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(8000) })
+    if (!res.ok) return null
+    const buf = await res.arrayBuffer()
+    return Buffer.from(buf).toString('base64')
+  } catch {
+    return null
+  }
+}
+
+export async function analyzeImages(
+  product: Product,
+  competitors: Product[],
+): Promise<ImageAnalysis[]> {
+  // Analyze main image for product + top 3 competitors
+  const targets = [product, ...competitors.slice(0, 3)]
+
+  const results = await Promise.all(
+    targets.map(async (p) => {
+      const imageUrl = p.images[0]
+      if (!imageUrl) return null
+
+      const base64 = await fetchImageAsBase64(imageUrl)
+      if (!base64) return null
+
+      const isProduct = p.id === product.id
+      const competitorContext = !isProduct
+        ? `This is a competitor image (${p.brand || p.title.split(' ')[0]}, avg search rank: ${p.avgRankSearch ?? 'unranked'}).`
+        : 'This is the selected product image to audit.'
+
+      try {
+        const msg = await client.messages.create({
+          model: 'claude-sonnet-4-6',
+          max_tokens: 1024,
+          system: `You are an Amazon product image compliance auditor. Use only the rules in the style guide below. Return only valid JSON.\n\n${STYLE_GUIDE}`,
+          messages: [{
+            role: 'user',
+            content: [
+              {
+                type: 'image',
+                source: { type: 'base64', media_type: 'image/jpeg', data: base64 },
+              },
+              {
+                type: 'text',
+                text: `${competitorContext}
+
+Audit this Amazon product image against the style guide rules. Return JSON:
+{
+  "findings": [
+    {
+      "check": "check name e.g. 'White background' or 'Product coverage' or 'No text overlays'",
+      "compliant": true | false,
+      "detail": "one sentence — what you observed",
+      "suppressionRisk": true | false
+    }
+  ],
+  "overallCompliant": true | false,
+  "suggestion": "if not compliant: one actionable fix for the main image, or null if compliant",
+  "competitorComparison": "${isProduct ? 'leave empty string' : `one sentence comparing this competitor image to standard guidelines`}"
+}
+
+Check all of: white background, product occupies 80%+ of image area, no text/watermarks/borders/decorations, no promotional text, JPEG format compliance, product clearly visible and identifiable.`,
+              },
+            ],
+          }],
+        })
+
+        const text = msg.content[0].type === 'text' ? msg.content[0].text : ''
+        const json = text.match(/\{[\s\S]*\}/)
+        if (!json) throw new Error('no json')
+        const parsed = JSON.parse(json[0])
+
+        return {
+          productId: p.id,
+          imageUrl,
+          ...parsed,
+        } as ImageAnalysis
+      } catch {
+        return null
+      }
+    })
+  )
+
+  return results.filter((r): r is ImageAnalysis => r !== null)
+}
+
+// ── 5. Summary ─────────────────────────────────────────────────────────────────
 
 export async function generateSummary(
   product: Product,

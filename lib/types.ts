@@ -66,6 +66,22 @@ export interface Suggestion {
   suppressionConsequence?: string
 }
 
+export interface ImageFinding {
+  check: string
+  compliant: boolean
+  detail: string
+  suppressionRisk: boolean
+}
+
+export interface ImageAnalysis {
+  productId: string
+  imageUrl: string
+  findings: ImageFinding[]
+  overallCompliant: boolean
+  suggestion: string | null
+  competitorComparison: string
+}
+
 export interface ReportData {
   product: Product
   competitors: Product[]
