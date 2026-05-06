@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(unzip -o case_study_1.zip -d case_study_1/)",
+      "mcp__claude_ai_Google_Drive__create_file",
+      "mcp__claude_ai_Google_Drive__read_file_content",
+      "Bash(gh auth *)",
+      "Bash(npx create-next-app@latest *)",
+      "Bash(mkdir -p /Users/rohan/Code/CommerceIQ/app)",
+      "Read(//Users/rohan/Code/**)",
+      "Bash(mv ciq-app/* ciq-app/.* CommerceIQ/)",
+      "Bash(cp -r /Users/rohan/Code/ciq-app/. /Users/rohan/Code/CommerceIQ/)",
+      "Bash(rm -rf /Users/rohan/Code/ciq-app)",
+      "Bash(npm install *)",
+      "Bash(npx shadcn@latest init --yes --base-color slate)",
+      "Bash(npx shadcn@latest init --yes)",
+      "Bash(npx shadcn@latest add badge button card input separator --yes)",
+      "Bash(mkdir -p /Users/rohan/Code/CommerceIQ/data)",
+      "Bash(cp \"/Users/rohan/Downloads/case_study_1/asin_data_filled.csv\" /Users/rohan/Code/CommerceIQ/data/products.csv)",
+      "Bash(cp \"/Users/rohan/Downloads/case_study_1/PetSupplies_PetFood_Styleguide_EN_AE._CB1198675309_ \\(4\\).pdf\" /Users/rohan/Code/CommerceIQ/data/amazon_style_guide.pdf)",
+      "Bash(mkdir -p /Users/rohan/Code/CommerceIQ/lib /Users/rohan/Code/CommerceIQ/app/api/feed /Users/rohan/Code/CommerceIQ/app/api/report/\\\\[id\\\\] /Users/rohan/Code/CommerceIQ/app/api/summary /Users/rohan/Code/CommerceIQ/app/report/\\\\[id\\\\])",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
