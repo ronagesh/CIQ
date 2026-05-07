@@ -235,6 +235,8 @@ After scoring, the top competitor by avg search rank (if any) is appended to the
 
 Analyzes the main image of the product + top 3 competitors using Claude Sonnet 4.6 vision. Each image is fetched and base64-encoded before being sent.
 
+Products in the dataset can have multiple image URLs. Only the first image (`images[0]`) is audited. This is intentional — the first image is Amazon's main image, the one shown in search results and subject to the strictest compliance rules (white background, 80% product coverage, no overlays). Secondary images have looser requirements and are not audited.
+
 **Checks per image:**
 1. White background (no colored backgrounds, lifestyle shots)
 2. Product coverage ≥80% of image area
