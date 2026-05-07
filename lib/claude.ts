@@ -242,14 +242,13 @@ Audit this Amazon product image against the style guide rules. Return JSON:
   "competitorComparison": "${isProduct ? 'leave empty string' : `one sentence comparing this competitor image to standard guidelines, citing any specific text or element observed`}"
 }
 
-Check all of: white background, product occupies 80%+ of image area, no text/watermarks/borders/decorations ADDED TO THE PHOTO as a digital layer, product clearly visible and identifiable.
+Check only these things:
+1. WHITE BACKGROUND — is the studio background behind the product pure white? Flag if there is a clearly non-white background colour, gradient, or lifestyle scene behind the product.
+2. PRODUCT COVERAGE — does the product occupy at least 80% of the image frame?
+3. TEXT OR GRAPHICS IN THE WHITE SPACE — is there any text, badge, logo, or graphic element floating in the empty white background area OUTSIDE the product's physical boundary? This is the only overlay violation that matters. Do NOT look at the product itself for this check.
+4. PRODUCT VISIBLE — is the product clearly identifiable?
 
-CRITICAL DISTINCTION — only flag a violation if you are CERTAIN the text or graphic is a post-production digital overlay, not part of the physical packaging:
-- A true overlay looks like: a semi-transparent banner, a floating badge that doesn't follow the product's surface contour, a sticker-style callout with drop shadow, or text that appears to "float" in front of the product on the white background.
-- Product packaging text looks like: words/logos printed directly on a box, label, pouch, or canister that follow the surface curvature and share the same lighting/shadow as the product.
-
-DO flag: non-white studio background, a floating promotional badge or starburst in the white space around the product, a banner overlaid across the product, watermarks or logos added digitally outside the product's footprint.
-DO NOT flag: any text, logo, brand name, callout, or icon that is visibly part of the physical packaging surface — including text on box panels, pouch labels, canister lids, or shrink-wrap. When in doubt, do NOT flag.`,
+For check 3, the rule is simple: if the element sits on or within the product (on a box panel, label, pouch, canister, wrapper) it is packaging — ignore it entirely regardless of what it says. Only flag something if it visibly sits in the white space outside the product's edge. When in doubt, do NOT flag.`,
               },
             ],
           }],
