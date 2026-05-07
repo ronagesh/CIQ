@@ -74,7 +74,7 @@ export function getQuantitativeScores(p: Product): QuantitativeScores {
     bulletCount: p.bullets.length,
     bulletCountTarget: 5,
     descriptionLength: p.description.length,
-    descriptionLengthMax: 200,
+    descriptionLengthMax: 2000,
     imageCount: p.images.length,
   }
 }
@@ -105,7 +105,7 @@ export function getCompetitors(product: Product, all: Product[]): Product[] {
 
 export function avgQuantitative(products: Product[]): QuantitativeScores {
   if (products.length === 0) {
-    return { titleLength: 0, titleLengthMax: 50, bulletCount: 0, bulletCountTarget: 5, descriptionLength: 0, descriptionLengthMax: 200, imageCount: 0 }
+    return { titleLength: 0, titleLengthMax: 50, bulletCount: 0, bulletCountTarget: 5, descriptionLength: 0, descriptionLengthMax: 2000, imageCount: 0 }
   }
   return {
     titleLength: Math.round(products.reduce((s, p) => s + p.title.length, 0) / products.length),
@@ -113,7 +113,7 @@ export function avgQuantitative(products: Product[]): QuantitativeScores {
     bulletCount: Math.round(products.reduce((s, p) => s + p.bullets.length, 0) / products.length),
     bulletCountTarget: 5,
     descriptionLength: Math.round(products.reduce((s, p) => s + p.description.length, 0) / products.length),
-    descriptionLengthMax: 200,
+    descriptionLengthMax: 2000,
     imageCount: Math.round(products.reduce((s, p) => s + p.images.length, 0) / products.length),
   }
 }

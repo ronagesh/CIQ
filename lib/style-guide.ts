@@ -40,7 +40,7 @@ export const STYLE_GUIDE = `
 - No company-specific information
 
 ## Product Description
-- Limited to 200 characters
+- Limited to 2000 characters
 - Describe major product features including size, used-for, style
 - Include accurate dimensions, care instructions, warranty information
 - Use correct grammar and complete sentences

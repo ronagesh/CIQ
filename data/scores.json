@@ -15,7 +15,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 473,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 5
       },
       "competitorAvgQuantitative": {
@@ -24,7 +24,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -43,7 +43,7 @@
         "bulletCount": 8,
         "bulletCountTarget": 5,
         "descriptionLength": 72,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -52,7 +52,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 507,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -71,7 +71,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 279,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -80,7 +80,7 @@
         "bulletCount": 0,
         "bulletCountTarget": 5,
         "descriptionLength": 0,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 0
       }
     },
@@ -99,7 +99,7 @@
         "bulletCount": 6,
         "bulletCountTarget": 5,
         "descriptionLength": 499,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -108,7 +108,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -127,7 +127,7 @@
         "bulletCount": 8,
         "bulletCountTarget": 5,
         "descriptionLength": 70,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -136,7 +136,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 507,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -155,7 +155,7 @@
         "bulletCount": 4,
         "bulletCountTarget": 5,
         "descriptionLength": 835,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 4
       },
       "competitorAvgQuantitative": {
@@ -164,7 +164,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 494,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -183,7 +183,7 @@
         "bulletCount": 1,
         "bulletCountTarget": 5,
         "descriptionLength": 499,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -192,7 +192,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -211,7 +211,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 576,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 5
       },
       "competitorAvgQuantitative": {
@@ -220,7 +220,7 @@
         "bulletCount": 0,
         "bulletCountTarget": 5,
         "descriptionLength": 0,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 0
       }
     },
@@ -239,7 +239,7 @@
         "bulletCount": 6,
         "bulletCountTarget": 5,
         "descriptionLength": 470,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -248,7 +248,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -267,7 +267,7 @@
         "bulletCount": 4,
         "bulletCountTarget": 5,
         "descriptionLength": 480,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 3
       },
       "competitorAvgQuantitative": {
@@ -276,7 +276,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -295,7 +295,7 @@
         "bulletCount": 7,
         "bulletCountTarget": 5,
         "descriptionLength": 229,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -304,7 +304,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 504,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -323,7 +323,7 @@
         "bulletCount": 7,
         "bulletCountTarget": 5,
         "descriptionLength": 227,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -332,7 +332,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 504,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -351,7 +351,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 306,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -360,7 +360,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 503,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -379,7 +379,7 @@
         "bulletCount": 8,
         "bulletCountTarget": 5,
         "descriptionLength": 79,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -388,7 +388,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 507,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -407,7 +407,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 483,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 5
       },
       "competitorAvgQuantitative": {
@@ -416,7 +416,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -435,7 +435,7 @@
         "bulletCount": 7,
         "bulletCountTarget": 5,
         "descriptionLength": 464,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -444,7 +444,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -463,7 +463,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 1222,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -472,7 +472,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 488,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -491,7 +491,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 1691,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 2
       },
       "competitorAvgQuantitative": {
@@ -500,7 +500,7 @@
         "bulletCount": 4,
         "bulletCountTarget": 5,
         "descriptionLength": 377,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 3
       }
     },
@@ -519,7 +519,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 479,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -528,7 +528,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -547,7 +547,7 @@
         "bulletCount": 7,
         "bulletCountTarget": 5,
         "descriptionLength": 113,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -556,7 +556,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 506,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -575,7 +575,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 496,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -584,7 +584,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -603,7 +603,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 304,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 4
       },
       "competitorAvgQuantitative": {
@@ -612,7 +612,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 503,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -631,7 +631,7 @@
         "bulletCount": 0,
         "bulletCountTarget": 5,
         "descriptionLength": 317,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -640,7 +640,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 503,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -659,7 +659,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 126,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 1
       },
       "competitorAvgQuantitative": {
@@ -668,7 +668,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 506,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -687,7 +687,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -696,7 +696,7 @@
         "bulletCount": 0,
         "bulletCountTarget": 5,
         "descriptionLength": 0,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 0
       }
     },
@@ -715,7 +715,7 @@
         "bulletCount": 0,
         "bulletCountTarget": 5,
         "descriptionLength": 1783,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 9
       },
       "competitorAvgQuantitative": {
@@ -724,7 +724,7 @@
         "bulletCount": 0,
         "bulletCountTarget": 5,
         "descriptionLength": 0,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 0
       }
     },
@@ -743,7 +743,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 304,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 5
       },
       "competitorAvgQuantitative": {
@@ -752,7 +752,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 503,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -771,7 +771,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 9
       },
       "competitorAvgQuantitative": {
@@ -780,7 +780,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -799,7 +799,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 301,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -808,7 +808,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 503,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -827,7 +827,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 1335,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 9
       },
       "competitorAvgQuantitative": {
@@ -836,7 +836,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 486,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -855,7 +855,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 960,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -864,7 +864,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 492,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -883,7 +883,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 1181,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 4
       },
       "competitorAvgQuantitative": {
@@ -892,7 +892,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 488,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -911,7 +911,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 5
       },
       "competitorAvgQuantitative": {
@@ -920,7 +920,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -939,7 +939,7 @@
         "bulletCount": 4,
         "bulletCountTarget": 5,
         "descriptionLength": 393,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -948,7 +948,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 502,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -967,7 +967,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 301,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -976,7 +976,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 503,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -995,7 +995,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -1004,7 +1004,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1023,7 +1023,7 @@
         "bulletCount": 0,
         "bulletCountTarget": 5,
         "descriptionLength": 47,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 1
       },
       "competitorAvgQuantitative": {
@@ -1032,7 +1032,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 507,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1051,7 +1051,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -1060,7 +1060,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1079,7 +1079,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 301,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 5
       },
       "competitorAvgQuantitative": {
@@ -1088,7 +1088,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 503,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1107,7 +1107,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 314,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -1116,7 +1116,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 503,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1135,7 +1135,7 @@
         "bulletCount": 4,
         "bulletCountTarget": 5,
         "descriptionLength": 47,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 9
       },
       "competitorAvgQuantitative": {
@@ -1144,7 +1144,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 507,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1163,7 +1163,7 @@
         "bulletCount": 0,
         "bulletCountTarget": 5,
         "descriptionLength": 315,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -1172,7 +1172,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 503,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1191,7 +1191,7 @@
         "bulletCount": 7,
         "bulletCountTarget": 5,
         "descriptionLength": 382,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -1200,7 +1200,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 502,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1219,7 +1219,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 787,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -1228,7 +1228,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 495,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1247,7 +1247,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 319,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -1256,7 +1256,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 503,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1275,7 +1275,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 499,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 11
       },
       "competitorAvgQuantitative": {
@@ -1284,7 +1284,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1303,7 +1303,7 @@
         "bulletCount": 4,
         "bulletCountTarget": 5,
         "descriptionLength": 1058,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 2
       },
       "competitorAvgQuantitative": {
@@ -1312,7 +1312,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 490,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1331,7 +1331,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 5
       },
       "competitorAvgQuantitative": {
@@ -1340,7 +1340,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1359,7 +1359,7 @@
         "bulletCount": 4,
         "bulletCountTarget": 5,
         "descriptionLength": 644,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -1368,7 +1368,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 497,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1387,7 +1387,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -1396,7 +1396,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1415,7 +1415,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -1424,7 +1424,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1443,7 +1443,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 444,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 5
       },
       "competitorAvgQuantitative": {
@@ -1452,7 +1452,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 501,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1471,7 +1471,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 1589,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -1480,7 +1480,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 482,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1499,7 +1499,7 @@
         "bulletCount": 7,
         "bulletCountTarget": 5,
         "descriptionLength": 397,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -1508,7 +1508,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 501,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1527,7 +1527,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 1451,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -1536,7 +1536,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 484,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1555,7 +1555,7 @@
         "bulletCount": 1,
         "bulletCountTarget": 5,
         "descriptionLength": 227,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 5
       },
       "competitorAvgQuantitative": {
@@ -1564,7 +1564,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 504,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1583,7 +1583,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -1592,7 +1592,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1611,7 +1611,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 1793,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -1620,7 +1620,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 478,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1639,7 +1639,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 8
       },
       "competitorAvgQuantitative": {
@@ -1648,7 +1648,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1667,7 +1667,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 10
       },
       "competitorAvgQuantitative": {
@@ -1676,7 +1676,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 500,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1695,7 +1695,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 774,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 1
       },
       "competitorAvgQuantitative": {
@@ -1704,7 +1704,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 495,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1723,7 +1723,7 @@
         "bulletCount": 7,
         "bulletCountTarget": 5,
         "descriptionLength": 397,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 7
       },
       "competitorAvgQuantitative": {
@@ -1732,7 +1732,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 501,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1751,7 +1751,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 92,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 5
       },
       "competitorAvgQuantitative": {
@@ -1760,7 +1760,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 507,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1772,14 +1772,14 @@
       "severity": "high",
       "suppressionRisk": false,
       "suppressionConsequence": "",
-      "rationale": "Multiple bullets violate style guide rules: they include ending punctuation (periods after several bullets), a pipe character used as a separator instead of a semicolon, and the final bullet is a full sentence with comparative claims rather than a fragment — all of which breach the no-ending-punctuation, no-symbols, and sentence-fragment requirements for key product features. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "rationale": "Multiple bullets violate style guide rules: they include ending punctuation (periods after bullet 2, 5, and 6), bullet 6 contains a colon-introduced comparative claim with full sentences rather than a fragment, and bullet 1 uses a pipe delimiter instead of a semicolon to separate phrases — collectively degrading listing quality and risking Amazon content policy enforcement. Hi-Lyte (avg rank #4) may serve as a reference.",
       "quantitative": {
         "titleLength": 47,
         "titleLengthMax": 50,
         "bulletCount": 6,
         "bulletCountTarget": 5,
         "descriptionLength": 114,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -1788,7 +1788,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 506,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1796,18 +1796,18 @@
       "productId": "B0BGR4FTZS",
       "productTitle": "Gatorlyte Powder Orange, 16.9oz (Pack of 6)",
       "brand": "Gatorade",
-      "issueType": "Description too long",
-      "severity": "medium",
+      "issueType": "Bullet points contain prohibited formatting and punctuation",
+      "severity": "high",
       "suppressionRisk": false,
       "suppressionConsequence": "",
-      "rationale": "Description is 231 characters, 31 over the 200-character limit. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "rationale": "Multiple bullet points include ending punctuation (periods), a pipe character used as a separator, and an exclamation-style comparative claim with a colon label ('Lower Sugar:'), all of which violate the style guide rules prohibiting periods, symbols, and hyphens in bullet points, undermining listing compliance and professionalism. Hi-Lyte (avg rank #4) may serve as a reference.",
       "quantitative": {
         "titleLength": 43,
         "titleLengthMax": 50,
         "bulletCount": 7,
         "bulletCountTarget": 5,
         "descriptionLength": 231,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       },
       "competitorAvgQuantitative": {
@@ -1816,7 +1816,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 504,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1824,18 +1824,18 @@
       "productId": "B08VS3CWB8",
       "productTitle": "Liquid Iv Hydration Lemon Lime 10 Count 5.65 OZ",
       "brand": "Liquid I.V.",
-      "issueType": "Description too long",
-      "severity": "medium",
+      "issueType": "Bullet points contain promotional/company-specific content instead of product features",
+      "severity": "high",
       "suppressionRisk": false,
       "suppressionConsequence": "",
-      "rationale": "Description is 246 characters, 46 over the 200-character limit. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "rationale": "All five bullet points focus on brand mission, company values, and corporate impact programs rather than the product's key features (ingredients, usage, benefits, format, quantity), directly violating the style guide requirement to highlight features customers should consider while prohibiting company-specific information and promotional content. Hi-Lyte (avg rank #4) may serve as a reference.",
       "quantitative": {
         "titleLength": 47,
         "titleLengthMax": 50,
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 246,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 3
       },
       "competitorAvgQuantitative": {
@@ -1844,7 +1844,7 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 504,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 6
       }
     },
@@ -1852,18 +1852,18 @@
       "productId": "B0024NU5UQ",
       "productTitle": "Propel Zero Water Variety - 24/16.9 oz.",
       "brand": "Gatorade",
-      "issueType": "Description too long",
-      "severity": "medium",
+      "issueType": "Missing brand in title",
+      "severity": "high",
       "suppressionRisk": false,
       "suppressionConsequence": "",
-      "rationale": "Description is 377 characters, 177 over the 200-character limit. Gatorade (avg rank #32) may serve as a reference.",
+      "rationale": "The title omits the required brand name 'Gatorade' per the format rule '[Brand] + [sub-brand if applicable] + [product type]…', meaning shoppers and Amazon's catalog cannot correctly attribute the product, undermining discoverability and brand trust. Gatorade (avg rank #32) may serve as a reference.",
       "quantitative": {
         "titleLength": 39,
         "titleLengthMax": 50,
         "bulletCount": 4,
         "bulletCountTarget": 5,
         "descriptionLength": 377,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 3
       },
       "competitorAvgQuantitative": {
@@ -1872,10 +1872,10 @@
         "bulletCount": 5,
         "bulletCountTarget": 5,
         "descriptionLength": 1691,
-        "descriptionLengthMax": 200,
+        "descriptionLengthMax": 2000,
         "imageCount": 2
       }
     }
   ],
-  "cachedAt": 1778135740943
+  "cachedAt": 1778136657389
 }

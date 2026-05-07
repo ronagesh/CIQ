@@ -29,7 +29,7 @@ import type { Product, IssueCard } from '../lib/types'
 const client = new Anthropic()
 
 const TITLE_MAX = 50
-const DESC_MAX = 200
+const DESC_MAX = 2000
 
 interface ScoreResult {
   severity: 'high' | 'medium' | 'low'
