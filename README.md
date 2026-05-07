@@ -160,6 +160,206 @@ Editing any field clears the existing markdown export so stale output is never c
 
 ---
 
+## Prompts
+
+All prompts use the full style guide (`lib/style-guide.ts`) injected into the system message as grounding context. All return structured JSON.
+
+---
+
+### 1. Qualitative severity scoring (`scripts/seed.ts`)
+
+Only runs when a product passes all hard rule checks. Identifies the single most critical remaining content issue.
+
+**System:** `You are an Amazon listing content auditor. Use only the rules in the style guide below. Return only valid JSON.` + style guide
+
+**User:**
+```
+Audit this product listing for qualitative issues (the quantitative checks —
+title length, image count, bullet count, description length — already pass).
+Identify the single most critical remaining content issue.
+
+Product ID: {id}
+Brand: {brand}
+Title ({N}/{MAX} chars): {title}
+Bullets ({N}): {bullets joined by " | "}
+Description ({N}/{MAX} chars): {description}
+Images: {N}
+
+Return JSON:
+{
+  "severity": "high" | "medium" | "low",
+  "suppressionRisk": true | false,
+  "suppressionConsequence": "brief description of Amazon enforcement consequence, or empty string",
+  "issueType": "short label describing the qualitative issue",
+  "rationale": "one sentence explaining the issue and its impact"
+}
+```
+
+---
+
+### 2. Analysis + suggestions (`lib/claude.ts` — `buildAnalysisPrompt`)
+
+Streamed. Produces the content scorecard and 3 improvement suggestions.
+
+**System:** `You are an expert Amazon listing content strategist. Use only the rules in the style guide below. Return only valid JSON.` + style guide
+
+**User:**
+```
+Analyze this Amazon product listing and generate the top 3 highest-impact
+improvement suggestions.
+
+SELECTED SKU:
+Brand: {brand}
+Title ({N}/{MAX} chars): {title}
+Bullets ({N}/{target}): {bullets}
+Description ({N}/{MAX} chars): {description}
+Images: {N}
+Avg search rank: {rank}
+
+COMPETITORS (ranked best first):
+Competitor 1: {brand} (avg search rank: {rank})
+  Title ({N} chars): {title}
+  Bullets ({N}): {top 3 bullets}
+  Description: {first 200 chars}
+...
+
+[NOTE: This product outranks all competitors. Frame suggestions as guideline
+compliance and suppression-risk issues rather than competitive gaps.]  ← only if applicable
+
+Return a JSON object:
+{
+  "scorecard": {
+    "title": "better" | "on par" | "worse",
+    "bullets": "better" | "on par" | "worse",
+    "description": "better" | "on par" | "worse",
+    "images": "better" | "on par" | "worse"
+  },
+  "suggestions": [
+    {
+      "dimension": "e.g. Title / Bullet 2 / Description",
+      "currentText": "the current text for this dimension",
+      "proposedText": "your ready-to-use replacement copy",
+      "guidelineCitation": "Amazon [section] Guidelines: '[exact verbatim rule quote]'.",
+      "competitorReference": "Synthesize a learning from the top 3 ranked competitors for
+        this dimension. Focus on the pattern across the group, not a single brand.
+        Use compliance framing if SKU is top-ranked.",
+      "suppressionRisk": true | false,
+      "suppressionConsequence": "brief description of enforcement consequence, or empty string"
+    }
+  ]
+}
+
+Scorecard rules:
+- Judge content QUALITY vs competitors (clarity, specificity, guideline compliance,
+  keyword relevance) — not just length
+- "worse" if the dimension has a clear quality deficit or guideline violation vs competitors
+- "better" if the dimension is noticeably stronger in quality than competitors
+- "on par" if roughly equivalent
+
+Suggestion rules:
+- Return exactly 3 suggestions
+- Only cite rules that appear verbatim in the provided style guide
+- Never reference competitors whose content violates guidelines
+- Proposed title text MUST be ≤50 characters — count every character, this is a hard limit
+- Proposed description text MUST be ≤2000 characters
+- Prioritize suppression-risk issues first
+```
+
+---
+
+### 3. Image compliance (`lib/claude.ts` — `analyzeImages`)
+
+Vision call. Runs for the product's main image and top 3 competitor main images.
+
+**System:** `You are an Amazon product image compliance auditor. Use only the rules in the style guide below. Return only valid JSON.` + style guide
+
+**User:** product image (base64) +
+```
+[This is the selected product image to audit. | This is a competitor image ({brand}, avg search rank: {rank}).]
+
+Audit this Amazon product image against the style guide rules. Return JSON:
+{
+  "findings": [
+    {
+      "check": "check name e.g. 'White background'",
+      "compliant": true | false,
+      "detail": "one specific sentence describing what you see",
+      "suppressionRisk": true | false
+    }
+  ],
+  "overallCompliant": true | false,
+  "suggestion": "one actionable fix, or null if compliant",
+  "competitorComparison": "one sentence comparing to guidelines (competitor images only)"
+}
+
+Check only these things:
+1. WHITE BACKGROUND — is the studio background behind the product pure white?
+2. PRODUCT COVERAGE — does the product occupy at least 80% of the image frame?
+3. TEXT OR GRAPHICS IN THE WHITE SPACE — is there any text, badge, logo, or graphic
+   floating in the empty white background area OUTSIDE the product's physical boundary?
+   This is the only overlay violation that matters. Do NOT look at the product itself.
+4. PRODUCT VISIBLE — is the product clearly identifiable?
+
+For check 3: if the element sits on or within the product (box panel, label, pouch,
+canister, wrapper) it is packaging — ignore it regardless of what it says. Only flag
+something if it visibly sits in the white space outside the product's edge.
+When in doubt, do NOT flag.
+```
+
+---
+
+### 4. Title shortener (`lib/claude.ts` — `shortenTitle`)
+
+Post-processing enforcement. Only called when the analysis prompt returns a proposed title > 50 chars.
+
+**System:** none
+
+**User:**
+```
+Shorten this Amazon product title to 50 characters or fewer. Keep brand, product
+type, and the most important attribute (flavor or size). Return ONLY the shortened
+title — no quotes, no explanation.
+
+Title: {title}
+Character limit: 50
+Current length: {N} chars
+```
+
+If the response is still > 50 chars, word-boundary truncation is applied as a final fallback.
+
+---
+
+### 5. Dataset enrichment (`scripts/enrich.ts`)
+
+One-time offline step. Two separate Haiku calls per product with missing fields.
+
+**Brand inference:**
+```
+What is the brand name for this Amazon product? Reply with ONLY the brand name,
+nothing else.
+
+Title: {title}
+Bullets: {top 3 bullets}
+Category: {category}
+```
+
+**Category inference:**
+```
+What is the Amazon category breadcrumb for this product?
+Format: "Top Level › Sub Level › Sub Sub Level".
+Reply with ONLY the breadcrumb, nothing else.
+
+Title: {title}
+```
+
+---
+
+### 6. Markdown export (`lib/claude.ts` — `generateSummary`)
+
+No LLM involved. Pure template function — user's exact edited text is slotted in verbatim.
+
+---
+
 ## Scripts
 
 ```bash
