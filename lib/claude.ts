@@ -127,20 +127,35 @@ ${competitorLines || 'No ranked competitors available.'}
 
 ${isTopRanked ? 'NOTE: This product outranks all competitors. Frame suggestions as guideline compliance and suppression-risk issues rather than competitive gaps.' : ''}
 
-Return a JSON array of exactly 3 suggestions:
-[
-  {
-    "dimension": "e.g. Title / Bullet 2 / Description",
-    "currentText": "the current text for this dimension",
-    "proposedText": "your ready-to-use replacement copy",
-    "guidelineCitation": "Amazon [section] Guidelines: '[exact verbatim rule quote from the style guide]'. Seller Central URL if applicable.",
-    "competitorReference": "e.g. 'Liquid I.V. (avg search rank #3) achieves this at 47 characters while retaining brand, flavor, and pack size' — or compliance framing if SKU is top-ranked",
-    "suppressionRisk": true | false,
-    "suppressionConsequence": "brief description of Amazon enforcement consequence if violated, or empty string"
-  }
-]
+Return a JSON object:
+{
+  "scorecard": {
+    "title": "better" | "on par" | "worse",
+    "bullets": "better" | "on par" | "worse",
+    "description": "better" | "on par" | "worse",
+    "images": "better" | "on par" | "worse"
+  },
+  "suggestions": [
+    {
+      "dimension": "e.g. Title / Bullet 2 / Description",
+      "currentText": "the current text for this dimension",
+      "proposedText": "your ready-to-use replacement copy",
+      "guidelineCitation": "Amazon [section] Guidelines: '[exact verbatim rule quote from the style guide]'. Seller Central URL if applicable.",
+      "competitorReference": "e.g. 'Liquid I.V. (avg search rank #3) achieves this at 47 characters while retaining brand, flavor, and pack size' — or compliance framing if SKU is top-ranked",
+      "suppressionRisk": true | false,
+      "suppressionConsequence": "brief description of Amazon enforcement consequence if violated, or empty string"
+    }
+  ]
+}
 
-Rules:
+Scorecard rules:
+- Judge content QUALITY vs competitors (clarity, specificity, guideline compliance, keyword relevance) — not just length
+- "worse" if the dimension has a clear quality deficit or guideline violation vs competitors
+- "better" if the dimension is noticeably stronger in quality than competitors
+- "on par" if roughly equivalent
+
+Suggestion rules:
+- Return exactly 3 suggestions
 - Only cite rules that appear verbatim in the provided style guide
 - Never reference competitors whose content violates guidelines
 - Proposed text must be shorter/better on quantitative dimensions than current text
@@ -156,7 +171,7 @@ export async function streamAnalysis(
 
   return client.messages.stream({
     model: 'claude-sonnet-4-6',
-    max_tokens: 2048,
+    max_tokens: 4096,
     system: `You are an expert Amazon listing content strategist. Use only the rules in the style guide below. Return only valid JSON.\n\n${STYLE_GUIDE}`,
     messages: [{ role: 'user', content: prompt }],
   })
@@ -217,16 +232,17 @@ Audit this Amazon product image against the style guide rules. Return JSON:
     {
       "check": "check name e.g. 'White background' or 'Product coverage' or 'No text overlays'",
       "compliant": true | false,
-      "detail": "one sentence — what you observed",
+      "detail": "one specific sentence — if non-compliant, quote the exact offending text verbatim (e.g. 'Text overlay reads \"NO SUGAR ♦ NO KCALS\" at top of pack') or describe the exact visual element and its location in the frame; if compliant, confirm what you see",
       "suppressionRisk": true | false
     }
   ],
   "overallCompliant": true | false,
-  "suggestion": "if not compliant: one actionable fix for the main image, or null if compliant",
-  "competitorComparison": "${isProduct ? 'leave empty string' : `one sentence comparing this competitor image to standard guidelines`}"
+  "suggestion": "if not compliant: one actionable fix naming the specific element to remove or change, or null if compliant",
+  "competitorComparison": "${isProduct ? 'leave empty string' : `one sentence comparing this competitor image to standard guidelines, citing any specific text or element observed`}"
 }
 
-Check all of: white background, product occupies 80%+ of image area, no text/watermarks/borders/decorations, no promotional text, JPEG format compliance, product clearly visible and identifiable.`,
+Check all of: white background, product occupies 80%+ of image area, no text/watermarks/borders/decorations ADDED TO THE PHOTO (overlays, sale badges, brand watermarks, floating callouts) — text or logos that are part of the physical product packaging are NOT violations, product clearly visible and identifiable.
+Do NOT flag: text printed on the product itself, symbols (®, ©, ™) on the product packaging, or lifestyle backgrounds that are simply the product's own colorful packaging. DO flag: non-white studio background behind the product, promotional text overlaid on the photo (e.g. "SALE", "FREE SHIPPING"), or watermarks added to the image.`,
               },
             ],
           }],

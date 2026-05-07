@@ -1,0 +1,1881 @@
+{
+  "issues": [
+    {
+      "productId": "B0D5WRQZFX",
+      "productTitle": "Hi-Lyte K1000 Electrolytes Sticks Unflavored Keto & Performance, 30 Servings",
+      "brand": "Hi-Lyte",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 76 characters, 26 over the 50-character maximum. Titles violating character limits risk listing suppression. Gatorade (avg rank #9) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 76,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 473,
+        "descriptionLengthMax": 200,
+        "imageCount": 5
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 138,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0D8WQZVZ5",
+      "productTitle": "Gatorade Hydration Booster Electrolyte Drink Mix Powder Packets, Tropical Mango, Advanced Electrolyte Blend, No Added Colors, No Artificial Sweeteners, Essential Vitamins A, C, B3, B5, B6, Makes 20 Fl Oz, (6 Pack)",
+      "brand": "Gatorade",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 213 characters, 163 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 213,
+        "titleLengthMax": 50,
+        "bulletCount": 8,
+        "bulletCountTarget": 5,
+        "descriptionLength": 72,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 136,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 507,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0050Q4DJS",
+      "productTitle": "Gatorade Endurance Gatorlytes, 0.12 Ounces (Pack of 20)",
+      "brand": "Gatorade",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 55 characters, 5 over the 50-character maximum. Titles violating character limits risk listing suppression.",
+      "quantitative": {
+        "titleLength": 55,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 279,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 0,
+        "titleLengthMax": 50,
+        "bulletCount": 0,
+        "bulletCountTarget": 5,
+        "descriptionLength": 0,
+        "descriptionLengthMax": 200,
+        "imageCount": 0
+      }
+    },
+    {
+      "productId": "B0CG7W485N",
+      "productTitle": "Liquid I.V.® Hydration Multiplier - Variety Pack - Lemon Lime, Passion Fruit, Strawberry, Tropical Punch | Electrolyte Powder Drink Mix | 1 Pack (16 Servings)",
+      "brand": "Liquid I.V.",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 158 characters, 108 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 158,
+        "titleLengthMax": 50,
+        "bulletCount": 6,
+        "bulletCountTarget": 5,
+        "descriptionLength": 499,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0D8WR33JW",
+      "productTitle": "Gatorade Hydration Booster Electrolyte Drink Mix Powder Packets, Citrus Berry, Advanced Electrolyte Blend, No Added Colors, No Artificial Sweeteners, Essential Vitamins A, C, B3, B5, B6, Makes 20 Fl Oz, (6 Pack)",
+      "brand": "Gatorade",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 211 characters, 161 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 211,
+        "titleLengthMax": 50,
+        "bulletCount": 8,
+        "bulletCountTarget": 5,
+        "descriptionLength": 70,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 136,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 507,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B016C9H37U",
+      "productTitle": "BODYTECH Electrolyte Fizz Packets, Lemon Lime - Supports Energy & Endurance with 1200MG of Vitamin C, On The Go Refreshment (32 Packets)",
+      "brand": "BODYTECH",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 136 characters, 86 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 136,
+        "titleLengthMax": 50,
+        "bulletCount": 4,
+        "bulletCountTarget": 5,
+        "descriptionLength": 835,
+        "descriptionLengthMax": 200,
+        "imageCount": 4
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 494,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0C6D9K39S",
+      "productTitle": "Waterboy Weekend Recovery Sample Pack | 3,200mg Electrolyte Powder Packets | Ginger + L-Theanine + Vitamins | No Sugar, All Natural, Gluten Free | 12 Drink Stick Mixes (Sample Pack)",
+      "brand": "Waterboy",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 181 characters, 131 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 181,
+        "titleLengthMax": 50,
+        "bulletCount": 1,
+        "bulletCountTarget": 5,
+        "descriptionLength": 499,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0D281CKYN",
+      "productTitle": "Wellah Get-Going Pre-Workout Drink Mix (Blue Raspberry Flavored, 30 Servings)",
+      "brand": "Wellah",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 77 characters, 27 over the 50-character maximum. Titles violating character limits risk listing suppression.",
+      "quantitative": {
+        "titleLength": 77,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 576,
+        "descriptionLengthMax": 200,
+        "imageCount": 5
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 0,
+        "titleLengthMax": 50,
+        "bulletCount": 0,
+        "bulletCountTarget": 5,
+        "descriptionLength": 0,
+        "descriptionLengthMax": 200,
+        "imageCount": 0
+      }
+    },
+    {
+      "productId": "B09VS269TJ",
+      "productTitle": "DripDrop Hydration Packets - Tropical Variety Pack - Single Serve Electrolytes Powder Drink Mix - Mango, Açaí, Passion Fruit, Piña Colada - Non-GMO, Gluten Free, Vegan - 16 Sticks",
+      "brand": "DripDrop",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 179 characters, 129 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 179,
+        "titleLengthMax": 50,
+        "bulletCount": 6,
+        "bulletCountTarget": 5,
+        "descriptionLength": 470,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B01N11MZ8L",
+      "productTitle": "Science in Sport SIS Electrolyte Tablets, Carbonated Electrolyte Drink Tablets, On-The-Go Low Sugar Electrolytes, Hydrating Effervescent Tablets for Running, Cycling, Berry - 20 Tablets - 1 Pack",
+      "brand": "Science in Sport",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 194 characters, 144 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 194,
+        "titleLengthMax": 50,
+        "bulletCount": 4,
+        "bulletCountTarget": 5,
+        "descriptionLength": 480,
+        "descriptionLengthMax": 200,
+        "imageCount": 3
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 136,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BPN423GH",
+      "productTitle": "Gatorlyte Rapid Rehydration Electrolyte Beverage, Variety Pack, Lower Sugar, Specialized Blend of 5 Electrolytes, No Artificial Sweeteners or Flavors, 18 pack, 1 pack mixes with 16.9oz (500ml) water",
+      "brand": "Gatorlyte",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 198 characters, 148 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 198,
+        "titleLengthMax": 50,
+        "bulletCount": 7,
+        "bulletCountTarget": 5,
+        "descriptionLength": 229,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 136,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 504,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BPN2PGWD",
+      "productTitle": "Gatorlyte Powder, Watermelon, Makes 20 Fl Oz (Pack of 48)",
+      "brand": "Gatorlyte",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 57 characters, 7 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 57,
+        "titleLengthMax": 50,
+        "bulletCount": 7,
+        "bulletCountTarget": 5,
+        "descriptionLength": 227,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 504,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B09Z646922",
+      "productTitle": "Ultima Replenisher Daily Electrolyte Powder Drink Mix – Sugar Free – Passionfruit, 90 Servings – Hydration Powder with 6 Key Electrolytes and Trace Minerals – Keto Friendly, Non-GMO",
+      "brand": "Ultima Replenisher",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 181 characters, 131 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 181,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 306,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 503,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0D8WP5BFG",
+      "productTitle": "Gatorade Hydration Booster Electrolyte Drink Mix Powder Packets, Strawberry Watermelon, Advanced Electrolyte Blend, No Added Colors, No Artificial Sweeteners, Essential Vitamins A, C, B3, B5, B6, Makes 20 Fl Oz (6 Pack)",
+      "brand": "Gatorade",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 219 characters, 169 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 219,
+        "titleLengthMax": 50,
+        "bulletCount": 8,
+        "bulletCountTarget": 5,
+        "descriptionLength": 79,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 136,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 507,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B01IIGMC58",
+      "productTitle": "Ultima Replenisher Electrolyte Hydration Drink Mix, Cherry Pomegranate, 20 Serving Stickpack Box, no Sugar, no Carbs, no Calories, Keto, Gluten-Free, Non-GMO, Vegan",
+      "brand": "Ultima Replenisher",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 164 characters, 114 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 164,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 483,
+        "descriptionLengthMax": 200,
+        "imageCount": 5
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BGR8JFDS",
+      "productTitle": "Gatorlyte Powder Cherry Lime, makes 16.9oz serving, net weight 3.1 oz (Pack of 6)",
+      "brand": "Gatorade",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 81 characters, 31 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 81,
+        "titleLengthMax": 50,
+        "bulletCount": 7,
+        "bulletCountTarget": 5,
+        "descriptionLength": 464,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 138,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B07BWM3FJL",
+      "productTitle": "Nuun Immunity Electrolyte Tablets with Vitamin D, C, E, & A, Ginger, Elderberry, Magnesium & 4 Other Essential Electrolytes, Vegan, Orange Citrus, 8 Pack (80 Servings Total)",
+      "brand": "Nuun",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 173 characters, 123 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 173,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 1222,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 488,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0977B82DP",
+      "productTitle": "The Gatorade Gatorade G Zero, Sugar Free Powder Sticks, 0.10oz Packets (Mixes with 20 ounces of Water) 10 Pack (Orange), 20 Fl Oz (Pack of 10)",
+      "brand": "Gatorade",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 142 characters, 92 over the 50-character maximum. Titles violating character limits risk listing suppression. Gatorade (avg rank #53) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 142,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 1691,
+        "descriptionLengthMax": 200,
+        "imageCount": 2
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 39,
+        "titleLengthMax": 50,
+        "bulletCount": 4,
+        "bulletCountTarget": 5,
+        "descriptionLength": 377,
+        "descriptionLengthMax": 200,
+        "imageCount": 3
+      }
+    },
+    {
+      "productId": "B09BPZPNF4",
+      "productTitle": "WATERFAST Keto Electrolyte Powder for Fasting and Hydration - Lemon Lime Flavor | Pink Himalayan Salt (Sodium), Potassium, Magnesium, Calcium | Sugar Free, Gluten Free, Soy Free",
+      "brand": "Simply Primal",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 177 characters, 127 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 177,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 479,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BPN46JQN",
+      "productTitle": "Gatorlyte Powder, Cherry Lime, Makes 16.9 Fl Oz (Pack of 48)",
+      "brand": "Gatorlyte",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 60 characters, 10 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 60,
+        "titleLengthMax": 50,
+        "bulletCount": 7,
+        "bulletCountTarget": 5,
+        "descriptionLength": 113,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 506,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B09MV1N9SM",
+      "productTitle": "BARE PERFORMANCE NUTRITION, BPN Electrolytes Hydration Drink Mix, No Sugar, Keto, Salted Watermelon",
+      "brand": "BARE PERFORMANCE NUTRITION",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 99 characters, 49 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 99,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 496,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 138,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0DGHN493N",
+      "productTitle": "BARE PERFORMANCE NUTRITION BPN Electrolytes Hydration Drink Mix | Sugar Free Electrolyte Powder | 500mg Sodium per Serving | Naturally Sweetened | Mango, 50 Servings",
+      "brand": "BARE PERFORMANCE NUTRITION",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 165 characters, 115 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 165,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 304,
+        "descriptionLengthMax": 200,
+        "imageCount": 4
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 503,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B00EISFBYA",
+      "productTitle": "LyteShow - Electrolyte Concentrate for Rapid Rehydration - NO Sugars, NO Additives - 40 Servings (with Magnesium, Potassium, Zinc)",
+      "brand": "LyteLine",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 130 characters, 80 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 130,
+        "titleLengthMax": 50,
+        "bulletCount": 0,
+        "bulletCountTarget": 5,
+        "descriptionLength": 317,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 503,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B01BTDN7T2",
+      "productTitle": "Nuun Beverage Tube Lemon Lime Tablet, 10 ct (811660020501)",
+      "brand": "Nuun",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 58 characters, 8 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 58,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 126,
+        "descriptionLengthMax": 200,
+        "imageCount": 1
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 506,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B07L5WY6XC",
+      "productTitle": "Trace Minerals Power Pak - Daily Health Support Supplement with Vitamins & Minerals - Power Packet Aids Immune Health & Hydration - Mix Powder Supports Bodily Functions - Orange Blas (90 Servings) t",
+      "brand": "Trace Minerals",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 198 characters, 148 over the 50-character maximum. Titles violating character limits risk listing suppression.",
+      "quantitative": {
+        "titleLength": 198,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 0,
+        "titleLengthMax": 50,
+        "bulletCount": 0,
+        "bulletCountTarget": 5,
+        "descriptionLength": 0,
+        "descriptionLengthMax": 200,
+        "imageCount": 0
+      }
+    },
+    {
+      "productId": "B094DW21L4",
+      "productTitle": "The Gatorade Gatorade Thirst Quencher Powder 1 23oz Packets Makes 20 ounces 10 Pack Orange 1 23 Ounce Pack of 10",
+      "brand": "Poiget",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 112 characters, 62 over the 50-character maximum. Titles violating character limits risk listing suppression.",
+      "quantitative": {
+        "titleLength": 112,
+        "titleLengthMax": 50,
+        "bulletCount": 0,
+        "bulletCountTarget": 5,
+        "descriptionLength": 1783,
+        "descriptionLengthMax": 200,
+        "imageCount": 9
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 0,
+        "titleLengthMax": 50,
+        "bulletCount": 0,
+        "bulletCountTarget": 5,
+        "descriptionLength": 0,
+        "descriptionLengthMax": 200,
+        "imageCount": 0
+      }
+    },
+    {
+      "productId": "B0BPDX6VZV",
+      "productTitle": "BARE PERFORMANCE NUTRITION BPN Electrolytes Hydration Drink Mix | Sugar Free Electrolyte Powder | 500mg Sodium per Serving | Naturally Sweetened | Strawberry, 50 Servings",
+      "brand": "BARE PERFORMANCE NUTRITION",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 170 characters, 120 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 170,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 304,
+        "descriptionLengthMax": 200,
+        "imageCount": 5
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 503,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B07DGKSF1P",
+      "productTitle": "SALTT Hydrate Electrolyte Drops - Keto Diets - Intermittent Fasting - Immune Support - Gluten & Sugar Free - Paleo - Sodium, Magnesium, Potassium & Trace Minerals - Unflavored - 8.3 fl oz",
+      "brand": "Keto Chow",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 187 characters, 137 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 187,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 9
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B01BDK9ATM",
+      "productTitle": "BARE PERFORMANCE NUTRITION BPN Electrolytes Go Packs Hydration Drink Mix | Sugar Free Electrolyte Powder | 500mg Sodium per Serving | Naturally Sweetened | Lemon Lime, 30 Servings",
+      "brand": "BARE PERFORMANCE NUTRITION",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 179 characters, 129 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 179,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 301,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 503,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0CL7HRWGX",
+      "productTitle": "FORCE FACTOR Liquid Labs Electrolytes Powder Packets—Lemon Lime—Hydration Packets to Make Electrolyte Water with 5 Essential Electrolytes, Vitamins, Minerals, and Antioxidants, 40 Stick Packs, 2-Pack",
+      "brand": "Force Factor",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 199 characters, 149 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 199,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 1335,
+        "descriptionLengthMax": 200,
+        "imageCount": 9
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 136,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 486,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B000P2ZIGY",
+      "productTitle": "Science in Sport Go Isotonic Energy Gel, Tropical, 60 ml, Pack of 30",
+      "brand": "Science in Sport",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 68 characters, 18 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 68,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 960,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 492,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0756QVFM5",
+      "productTitle": "GU Energy Hydration Electrolyte Drink Tablets, Vegan, Gluten Free & Caffeine Free, Enhanced Endurance Sports Drink for Running, Cycling, Triathlon, 4-Count (48 Servings), Assorted Flavors",
+      "brand": "GU",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 187 characters, 137 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 187,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 1181,
+        "descriptionLengthMax": 200,
+        "imageCount": 4
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 488,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0D1YR8KTF",
+      "productTitle": "Wellah Splish Splash Hydration Electrolyte Drink Mix (Watermelon Flavored, 30 Servings)",
+      "brand": "Wellah",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 87 characters, 37 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 87,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 5
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 138,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0C3KGFWVL",
+      "productTitle": "Zeal Naturals Enhanced Electrolyte Powder Stick Packs (Variety Pack - 20 Packets) Sugar Free + BCAA B-Vitamins & Pink Himalayan Salt - Keto Electrolytes, Hydration Powder",
+      "brand": "Zeal Naturals",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 170 characters, 120 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 170,
+        "titleLengthMax": 50,
+        "bulletCount": 4,
+        "bulletCountTarget": 5,
+        "descriptionLength": 393,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 502,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BYGDC8RY",
+      "productTitle": "BARE PERFORMANCE NUTRITION BPN Electrolytes Go Packs Hydration Drink Mix | Sugar Free Electrolyte Powder | 500mg Sodium per Serving | Naturally Sweetened | Strawberry 30 Servings",
+      "brand": "BARE PERFORMANCE NUTRITION",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 178 characters, 128 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 178,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 301,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 503,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BPVKSP8R",
+      "productTitle": "Horbäach Electrolytes Powder | 16 oz | 130 Servings | Hydration Supplement | Vegetarian | Keto-Friendly | Non-GMO, Gluten Free Formula | Lemon Flavor",
+      "brand": "Horbäach",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 149 characters, 99 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 149,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0DHZR6JG8",
+      "productTitle": "Protein Shake Non-Dairy Chocolate Peanut Butter, 14 Fl Oz",
+      "brand": "Muscle Milk",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 57 characters, 7 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 57,
+        "titleLengthMax": 50,
+        "bulletCount": 0,
+        "bulletCountTarget": 5,
+        "descriptionLength": 47,
+        "descriptionLengthMax": 200,
+        "imageCount": 1
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 507,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BGT67LM7",
+      "productTitle": "Horbäach Electrolyte Tablets | 200 Count | Vegetarian | Keto-Friendly | Non-GMO, and Gluten Free Hydration Supplement",
+      "brand": "Horbäach",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 117 characters, 67 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 117,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 138,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0711VBT9M",
+      "productTitle": "BARE PERFORMANCE NUTRITION BPN Electrolytes Go Packs Hydration Drink Mix | Sugar Free Electrolyte Powder | 500mg Sodium per Serving | Naturally Sweetened | Salted Watermelon, 30 Servings",
+      "brand": "BARE PERFORMANCE NUTRITION",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 186 characters, 136 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 186,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 301,
+        "descriptionLengthMax": 200,
+        "imageCount": 5
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 503,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0CV5T9NP2",
+      "productTitle": "KEY NUTRIENTS Multivitamin Electrolytes Powder Packets - Delicious Passion Fruit 20 Pack Hydration Packets - Travel Hydration Powder - No Sugar, No Calories, Gluten Free - Made in USA",
+      "brand": "KEY NUTRIENTS",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 183 characters, 133 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 183,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 314,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 503,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0D6N5FZ29",
+      "productTitle": "Liquid I.V. Sugarfree Hydration Multiplier Lemon Lime & White Peach - 26 Sticks",
+      "brand": "Liquid I.V.",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 79 characters, 29 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 79,
+        "titleLengthMax": 50,
+        "bulletCount": 4,
+        "bulletCountTarget": 5,
+        "descriptionLength": 47,
+        "descriptionLengthMax": 200,
+        "imageCount": 9
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 138,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 507,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B07L46F4X3",
+      "productTitle": "Precision Hydration Electrolyte Tablets - Multi Strength Effervescent Hydration Tablets - Combats Cramp - Low Calorie, Gluten Free, Vegan Friendly (12 Tubes, 500mg/L - Yellow Tube)",
+      "brand": "Precision Hydration",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 180 characters, 130 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 180,
+        "titleLengthMax": 50,
+        "bulletCount": 0,
+        "bulletCountTarget": 5,
+        "descriptionLength": 315,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 503,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0D3FP8P6W",
+      "productTitle": "Drinklits Ginger-Lime Daily Electrolyte Hydration Tablets (4) Tube Bundle | Made with Organic Ginger – 0g Sugar – Great Taste | 4 Pack (40 Servings)",
+      "brand": "Drinklits",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 148 characters, 98 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 148,
+        "titleLengthMax": 50,
+        "bulletCount": 7,
+        "bulletCountTarget": 5,
+        "descriptionLength": 382,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 502,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BPN847GJ",
+      "productTitle": "Propel Immune Support Tablets, Orange Raspberry, Makes 16.9oz Fl Oz (Pack of 80)",
+      "brand": "Propel",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 80 characters, 30 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 80,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 787,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 138,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 495,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B08YND6YC3",
+      "productTitle": "Electrolyte Packets for Recovery & Hydration | Organic & Sugar-Free Electrolytes Drinks | Works Faster Than Powder Drink | On-The-Go Liquid Hydration Drink | Raspberry, 10 Pack",
+      "brand": "PROTEKT",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 176 characters, 126 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 176,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 319,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 503,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B07KH1Q5XS",
+      "productTitle": "Gatorade Gatorade Prime Energy Chews, 1 Ounce, 12 Count",
+      "brand": "Gatorade",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 55 characters, 5 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 55,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 499,
+        "descriptionLengthMax": 200,
+        "imageCount": 11
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0D7YPD8WV",
+      "productTitle": "Liquid Hydration Multiplier Firecraker Flavor 30 Pack | Hydration Powder Packets | Electrolyte Drink Mix | Easy Open Single-Serving Sticks | Non-GMO |",
+      "brand": "Liquid I.V.",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 150 characters, 100 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 150,
+        "titleLengthMax": 50,
+        "bulletCount": 4,
+        "bulletCountTarget": 5,
+        "descriptionLength": 1058,
+        "descriptionLengthMax": 200,
+        "imageCount": 2
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 490,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B09DDCFPH1",
+      "productTitle": "BioSteel Zero Sugar Hydration Mix, Great Tasting Hydration with 5 Essential Electrolytes, Rainbow Twist Flavor, 20 Servings per Tub",
+      "brand": "BIOSTEEL",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 131 characters, 81 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 131,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 5
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B07DX3J2D1",
+      "productTitle": "Pedialyte Electrolyte Powder Packets, Strawberry Lemonade, Hydration Drink, 100 Single-Serving Powder Packets",
+      "brand": "Pedialyte",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 109 characters, 59 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 109,
+        "titleLengthMax": 50,
+        "bulletCount": 4,
+        "bulletCountTarget": 5,
+        "descriptionLength": 644,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 138,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 497,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B09RTHJD2P",
+      "productTitle": "Wilderness Athlete - Hydrate & Recover | Liquid Hydration Packets Electrolyte Drink Mix - Recover Faster with Bcaas - 30 Single Serving Hydrate Packets (Grape)",
+      "brand": "Wilderness Athlete",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 159 characters, 109 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 159,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0B992G9VK",
+      "productTitle": "Electrolyte Powder Drink Mix, 25 Count, Travel Ready Stick Packs, Extreme Re-Hydration, Low Sugar, Prevent Dehydration, Eliminate Cramps (Lemon-Lime)",
+      "brand": "Fluid Tactical",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 149 characters, 99 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 149,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B09F86XSQT",
+      "productTitle": "Stur Electrolyte Hydration Powder | Fruit Punch | High Antioxidants & B Vitamins | Sugar Free | Non-GMO | Daily Hydration & Workout Recovery | Keto | Paleo | Vegan (16 Packets)",
+      "brand": "Stur",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 176 characters, 126 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 176,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 444,
+        "descriptionLengthMax": 200,
+        "imageCount": 5
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 501,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0D4HHQK4J",
+      "productTitle": "Electrolytes Powder Plus (50 Servings), 0 Calorie Keto, 0 Sugar, No Maltodextrin,1000mg Potassium,120mg Calcium,120mg Magnesium, Hydration Powder (50 Servings, Strawberry Cucumber)",
+      "brand": "PowderVitamin",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 180 characters, 130 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 180,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 1589,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 482,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BPN62TJ4",
+      "productTitle": "Propel Fitness Water Tablets, Grape, 10 Count Tube, (Pack of 8)",
+      "brand": "Propel",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 63 characters, 13 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 63,
+        "titleLengthMax": 50,
+        "bulletCount": 7,
+        "bulletCountTarget": 5,
+        "descriptionLength": 397,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 501,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0DJ4917GG",
+      "productTitle": "Electrolytes Powder Plus (20 Servings) Unflavored Electrolyte Powder Keto, Sugar Free, Pink Himalayan Salt.,1000mg Potassium,150mg Calcium,150mg Magnesium, Hydration Powder Organic STEVIA",
+      "brand": "PowderVitamin",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 187 characters, 137 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 187,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 1451,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 484,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0CRVWQ6DV",
+      "productTitle": "SOS Hydration (24 Servings (Pack of 1), Mixed Berry)",
+      "brand": "SOS",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 52 characters, 2 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 52,
+        "titleLengthMax": 50,
+        "bulletCount": 1,
+        "bulletCountTarget": 5,
+        "descriptionLength": 227,
+        "descriptionLengthMax": 200,
+        "imageCount": 5
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 504,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B07L45RRK2",
+      "productTitle": "Precision Hydration Electrolyte Powder - No Artificial Ingredients,Multi Strength Hydration Packets - Individual Waterproof Servings - Gluten Free,(1 Box (8 Packets,1500mg/L- Purple)",
+      "brand": "Precision Hydration",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 182 characters, 132 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 182,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0CKLH8132",
+      "productTitle": "KEY NUTRIENTS Electrolytes Powder Packets - Tangy Orange 40 Pack Hydration Packets - Travel Hydration Powder - Made in USA - No Sugar, No Calories, Gluten Free",
+      "brand": "KEY NUTRIENTS",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 159 characters, 109 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 159,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 1793,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 478,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B08QQHF1RP",
+      "productTitle": "Jigsaw Health Potassium Cocktail | Formerly Pickleball Cocktail | Orange Flavor | 60 Servings (Packets)",
+      "brand": "Jigsaw Health",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 103 characters, 53 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 103,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 8
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 138,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0C28WVJF7",
+      "productTitle": "BARE PERFORMANCE NUTRITION, BPN G.1.M Go One More Sport, Endurance Training Fuel, Superior Carbohydrate & Electrolytes Powder Formula, Reduce Fatigue, Salted Watermelon, 25 Servings",
+      "brand": "BARE PERFORMANCE NUTRITION",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 181 characters, 131 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 181,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 10
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 500,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0013KAPJW",
+      "productTitle": "Sqwincher Liquid Concentrate Grape Flavored Low Calorie Low Sodium Electrolyte Replenishment Hydration Drink Mix Makes 5 Gallons of Bevrage 64 Oz (Pack of 6)",
+      "brand": "Sqwincher",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 157 characters, 107 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 157,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 774,
+        "descriptionLengthMax": 200,
+        "imageCount": 1
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 137,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 495,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BPN8LM5G",
+      "productTitle": "Propel Fitness Water Tablets, Kiwi Strawberry, 80 Count",
+      "brand": "Propel",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 55 characters, 5 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 55,
+        "titleLengthMax": 50,
+        "bulletCount": 7,
+        "bulletCountTarget": 5,
+        "descriptionLength": 397,
+        "descriptionLengthMax": 200,
+        "imageCount": 7
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 501,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B08SG8B3TZ",
+      "productTitle": "GoodSport Electrolyte Sports Drink, Rapid & Long-lasting Hydration (16.9 Fl Oz (Pack of 12), Lemon Lime)",
+      "brand": "GoodSport",
+      "issueType": "Title too long",
+      "severity": "high",
+      "suppressionRisk": true,
+      "suppressionConsequence": "Listing suppression — title exceeds character limit",
+      "rationale": "Title is 104 characters, 54 over the 50-character maximum. Titles violating character limits risk listing suppression. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 104,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 92,
+        "descriptionLengthMax": 200,
+        "imageCount": 5
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 138,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 507,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BGR6842K",
+      "productTitle": "Gatorlyte Powder Watermelon, 16.9oz (Pack of 6)",
+      "brand": "Gatorlyte",
+      "issueType": "Bullet point formatting violations",
+      "severity": "high",
+      "suppressionRisk": false,
+      "suppressionConsequence": "",
+      "rationale": "Multiple bullets violate style guide rules: they include ending punctuation (periods after several bullets), a pipe character used as a separator instead of a semicolon, and the final bullet is a full sentence with comparative claims rather than a fragment — all of which breach the no-ending-punctuation, no-symbols, and sentence-fragment requirements for key product features. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 47,
+        "titleLengthMax": 50,
+        "bulletCount": 6,
+        "bulletCountTarget": 5,
+        "descriptionLength": 114,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 506,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0BGR4FTZS",
+      "productTitle": "Gatorlyte Powder Orange, 16.9oz (Pack of 6)",
+      "brand": "Gatorade",
+      "issueType": "Description too long",
+      "severity": "medium",
+      "suppressionRisk": false,
+      "suppressionConsequence": "",
+      "rationale": "Description is 231 characters, 31 over the 200-character limit. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 43,
+        "titleLengthMax": 50,
+        "bulletCount": 7,
+        "bulletCountTarget": 5,
+        "descriptionLength": 231,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 504,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B08VS3CWB8",
+      "productTitle": "Liquid Iv Hydration Lemon Lime 10 Count 5.65 OZ",
+      "brand": "Liquid I.V.",
+      "issueType": "Description too long",
+      "severity": "medium",
+      "suppressionRisk": false,
+      "suppressionConsequence": "",
+      "rationale": "Description is 246 characters, 46 over the 200-character limit. Hi-Lyte (avg rank #4) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 47,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 246,
+        "descriptionLengthMax": 200,
+        "imageCount": 3
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 139,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 504,
+        "descriptionLengthMax": 200,
+        "imageCount": 6
+      }
+    },
+    {
+      "productId": "B0024NU5UQ",
+      "productTitle": "Propel Zero Water Variety - 24/16.9 oz.",
+      "brand": "Gatorade",
+      "issueType": "Description too long",
+      "severity": "medium",
+      "suppressionRisk": false,
+      "suppressionConsequence": "",
+      "rationale": "Description is 377 characters, 177 over the 200-character limit. Gatorade (avg rank #32) may serve as a reference.",
+      "quantitative": {
+        "titleLength": 39,
+        "titleLengthMax": 50,
+        "bulletCount": 4,
+        "bulletCountTarget": 5,
+        "descriptionLength": 377,
+        "descriptionLengthMax": 200,
+        "imageCount": 3
+      },
+      "competitorAvgQuantitative": {
+        "titleLength": 142,
+        "titleLengthMax": 50,
+        "bulletCount": 5,
+        "bulletCountTarget": 5,
+        "descriptionLength": 1691,
+        "descriptionLengthMax": 200,
+        "imageCount": 2
+      }
+    }
+  ],
+  "cachedAt": 1778135740943
+}

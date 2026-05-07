@@ -3,6 +3,8 @@ import { getCompetitors, getQuantitativeScores, avgQuantitative } from '@/lib/pr
 import { getProducts } from '@/lib/store'
 import { streamAnalysis } from '@/lib/claude'
 
+export const maxDuration = 300
+
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ id: string }> }
@@ -62,16 +64,21 @@ export async function GET(
         }
       }
 
-      // Parse and validate suggestions before sending final
+      // Parse scorecard + suggestions from the response object
       try {
-        const jsonMatch = fullText.match(/\[[\s\S]*\]/)
+        const jsonMatch = fullText.match(/\{[\s\S]*\}/)
         if (jsonMatch) {
-          const suggestions = JSON.parse(jsonMatch[0])
-          controller.enqueue(
-            new TextEncoder().encode(
-              JSON.stringify({ type: 'suggestions', suggestions }) + '\n'
-            )
-          )
+          const parsed = JSON.parse(jsonMatch[0])
+          if (parsed.suggestions) {
+            controller.enqueue(new TextEncoder().encode(
+              JSON.stringify({ type: 'suggestions', suggestions: parsed.suggestions }) + '\n'
+            ))
+          }
+          if (parsed.scorecard) {
+            controller.enqueue(new TextEncoder().encode(
+              JSON.stringify({ type: 'scorecard', scorecard: parsed.scorecard }) + '\n'
+            ))
+          }
         }
       } catch {
         // stream already sent raw text

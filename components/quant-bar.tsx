@@ -3,32 +3,38 @@
 interface QuantBarProps {
   label: string
   value: number
-  max: number
+  compAvg?: number
+  // legacy props kept for any remaining callers
+  max?: number
   target?: number
-  unit?: string
-  invert?: boolean // lower is better (rank)
 }
 
-export function QuantBar({ label, value, max, target, unit = '', invert }: QuantBarProps) {
-  const pct = Math.min((value / max) * 100, 100)
-  const isViolation = value > max
-  const isUndertilized = target !== undefined && value < target
+type Signal = 'better' | 'on par' | 'worse'
 
-  let barColor = 'bg-emerald-500'
-  if (isViolation) barColor = 'bg-red-500'
-  else if (isUndertilized) barColor = 'bg-yellow-400'
+const BADGE: Record<Signal, { label: string; cls: string }> = {
+  better:   { label: '↑ Better',  cls: 'text-emerald-700 bg-emerald-50 border-emerald-200' },
+  'on par': { label: '= On par',  cls: 'text-zinc-500 bg-zinc-50 border-zinc-200' },
+  worse:    { label: '↓ Worse',   cls: 'text-amber-700 bg-amber-50 border-amber-200' },
+}
+
+export function QuantBar({ label, value, compAvg }: QuantBarProps) {
+  if (!compAvg) {
+    return (
+      <div className="flex items-center justify-between gap-2 py-0.5">
+        <span className="text-[11px] text-zinc-500">{label}</span>
+        <span className="text-[10px] font-medium text-zinc-600">{value}</span>
+      </div>
+    )
+  }
+
+  const ratio = compAvg > 0 ? value / compAvg : 1
+  const s: Signal = ratio >= 1.08 ? 'better' : ratio <= 0.92 ? 'worse' : 'on par'
+  const { label: badgeLabel, cls } = BADGE[s]
 
   return (
-    <div className="flex flex-col gap-1">
-      <div className="flex justify-between text-xs text-slate-500">
-        <span>{label}</span>
-        <span className={isViolation ? 'text-red-600 font-semibold' : ''}>
-          {value}{unit} / {max}{unit}
-        </span>
-      </div>
-      <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
-        <div className={`h-full rounded-full transition-all ${barColor}`} style={{ width: `${pct}%` }} />
-      </div>
+    <div className="flex items-center justify-between gap-2 py-0.5">
+      <span className="text-[11px] text-zinc-500">{label}</span>
+      <span className={`text-[9px] font-semibold border rounded-full px-1.5 py-0.5 leading-none ${cls}`}>{badgeLabel}</span>
     </div>
   )
 }

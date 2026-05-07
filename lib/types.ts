@@ -54,6 +54,7 @@ export interface IssueCard {
   suppressionConsequence?: string
   rationale: string
   quantitative: QuantitativeScores
+  competitorAvgQuantitative?: QuantitativeScores
 }
 
 export interface Suggestion {
