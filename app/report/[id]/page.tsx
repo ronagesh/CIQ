@@ -63,7 +63,32 @@ export default function ReportPage() {
   const [copied, setCopied] = useState(false)
   const [imageAnalyses, setImageAnalyses] = useState<ImageAnalysis[]>([])
   const [imageLoading, setImageLoading] = useState(true)
+  const [violations, setViolations] = useState<string[][]>([])
   const bufferRef = useRef('')
+
+  function checkViolations(text: string, dimension: string): string[] {
+    const errs: string[] = []
+    const dim = dimension.toLowerCase()
+    if (dim === 'title') {
+      if (text.length > 50) errs.push(`${text.length} chars — max 50 (suppression risk)`)
+      const bad = [...new Set((text.match(/[!*$?®©™]/g) ?? []))]
+      if (bad.length) errs.push(`Prohibited characters: ${bad.join(' ')}`)
+      if (/[A-Z]{3,}/.test(text)) errs.push('Do not use ALL CAPS')
+      if (/\bfree\s+ship|\bsale\b/i.test(text) || /\$\d/.test(text)) errs.push('No price, quantity, or promotional messages')
+      if (/\bbest\s+seller\b|\bhot\s+item\b/i.test(text)) errs.push('No subjective commentary (Best Seller, Hot Item)')
+    } else if (dim.startsWith('bullet')) {
+      if (/[.!]$/.test(text.trim())) errs.push('No ending punctuation')
+      if (/!/.test(text)) errs.push('No exclamation points')
+      if (text.length > 0 && text[0] !== text[0].toUpperCase()) errs.push('Must begin with a capital letter')
+      if (/\bfree\s+ship|\bsale\b/i.test(text)) errs.push('No promotional or pricing information')
+    } else if (dim === 'description') {
+      if (text.length > 2000) errs.push(`${text.length} chars — max 2000`)
+      if (/[A-Z]{5,}/.test(text)) errs.push('Do not write in ALL CAPS')
+      if (/@\w+|\bhttp/i.test(text)) errs.push('No email addresses or URLs')
+      if (/\bfree\s+ship|\bsale\b/i.test(text)) errs.push('No promotional language')
+    }
+    return errs
+  }
 
   useEffect(() => {
     if (!id) return
@@ -344,19 +369,38 @@ export default function ReportPage() {
                             </p>
                             <textarea
                               value={editedTexts[i] ?? s.proposedText}
-                              onChange={e => { const n = [...editedTexts]; n[i] = e.target.value; setEditedTexts(n); e.target.style.height = 'auto'; e.target.style.height = e.target.scrollHeight + 'px' }}
+                              onChange={e => {
+                                const n = [...editedTexts]; n[i] = e.target.value; setEditedTexts(n)
+                                const v = [...violations]; v[i] = checkViolations(e.target.value, s.dimension); setViolations(v)
+                                setMarkdown(null)
+                                e.target.style.height = 'auto'; e.target.style.height = e.target.scrollHeight + 'px'
+                              }}
                               ref={el => { if (el) { el.style.height = 'auto'; el.style.height = el.scrollHeight + 'px' } }}
                               rows={1}
                               className="w-full bg-emerald-50 border border-emerald-200 rounded-lg px-3 py-2.5 text-xs text-zinc-700 leading-relaxed resize-none focus:outline-none focus:ring-2 focus:ring-emerald-300 transition-all overflow-hidden"
                             />
-                            {isEdited && (
-                              <button
-                                className="mt-0.5 text-[10px] text-zinc-400 hover:text-zinc-600 underline underline-offset-2"
-                                onClick={() => { const n = [...editedTexts]; n[i] = s.proposedText; setEditedTexts(n) }}
-                              >
-                                Reset to original
-                              </button>
-                            )}
+                            <div className="flex items-start justify-between gap-2 mt-0.5 min-h-[16px]">
+                              {violations[i]?.length > 0 ? (
+                                <div className="flex flex-col gap-0.5">
+                                  {violations[i].map((v, vi) => (
+                                    <span key={vi} className="flex items-center gap-1 text-[10px] text-amber-700 leading-snug">
+                                      <AlertTriangle className="w-2.5 h-2.5 flex-shrink-0" />{v}
+                                    </span>
+                                  ))}
+                                </div>
+                              ) : <span />}
+                              {isEdited && (
+                                <button
+                                  className="text-[10px] text-zinc-400 hover:text-zinc-600 underline underline-offset-2 flex-shrink-0"
+                                  onClick={() => {
+                                    const n = [...editedTexts]; n[i] = s.proposedText; setEditedTexts(n)
+                                    const v = [...violations]; v[i] = []; setViolations(v)
+                                  }}
+                                >
+                                  Reset to original
+                                </button>
+                              )}
+                            </div>
                           </div>
                         </div>
 
@@ -377,7 +421,7 @@ export default function ReportPage() {
             </div>
 
             {/* Export */}
-            {suggestions.length > 0 && !streaming && !markdown && (
+            {suggestions.length > 0 && !streaming && (
               <div className="px-5 py-4 border-t border-violet-100 bg-violet-50/30 flex items-center justify-between">
                 <p className="text-xs text-zinc-500">{suggestions.length} recommendation{suggestions.length > 1 ? 's' : ''} ready to export</p>
                 <button
@@ -387,6 +431,8 @@ export default function ReportPage() {
                 >
                   {generatingSummary ? (
                     <><span className="w-3.5 h-3.5 rounded-full border-2 border-white/40 border-t-white animate-spin" /> Generating…</>
+                  ) : markdown ? (
+                    <><Sparkles className="w-3.5 h-3.5" /> Regenerate Markdown</>
                   ) : (
                     <><Sparkles className="w-3.5 h-3.5" /> Generate Markdown Summary</>
                   )}

@@ -20,6 +20,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'No approved suggestions' }, { status: 400 })
   }
 
-  const markdown = await generateSummary(product, approvedSuggestions)
+  const markdown = generateSummary(product, approvedSuggestions)
   return NextResponse.json({ markdown })
 }

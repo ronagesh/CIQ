@@ -269,38 +269,41 @@ Do NOT flag: text printed on the product itself, symbols (®, ©, ™) on the pr
 
 // ── 5. Summary ─────────────────────────────────────────────────────────────────
 
-export async function generateSummary(
+export function generateSummary(
   product: Product,
-  approvedSuggestions: Suggestion[],
-): Promise<string> {
-  const msg = await client.messages.create({
-    model: 'claude-sonnet-4-6',
-    max_tokens: 2048,
-    system: 'You are a technical writer producing clean Markdown for Amazon listing uploads.',
-    messages: [{
-      role: 'user',
-      content: `Generate a final Markdown summary for this product with approved changes applied.
+  suggestions: Suggestion[],
+): string {
+  // Build a lookup of dimension → approved text so we can slot in user edits verbatim
+  const byDimension = new Map(suggestions.map(s => [s.dimension.toLowerCase(), s]))
 
-Product: ${product.title} (${product.id})
-
-Approved changes:
-${approvedSuggestions.map((s, i) => `${i + 1}. ${s.dimension}
-   Current: ${s.currentText}
-   Approved replacement: ${s.proposedText}
-   Guideline: ${s.guidelineCitation}
-   Competitor reference: ${s.competitorReference}`).join('\n\n')}
-
-Produce a Markdown document with:
-1. A "## Final Content" section with the updated title, bullet points, and description
-2. A "## Change Log" table with columns: Field | Change | Guideline Cited | Competitor Referenced
-
-Use the original product content for any fields not covered by the approved changes:
-Original title: ${product.title}
-Original bullets:
-${product.bullets.map((b, i) => `${i + 1}. ${b}`).join('\n')}
-Original description: ${product.description}`
-    }],
+  const title = byDimension.get('title')?.proposedText ?? product.title
+  const description = byDimension.get('description')?.proposedText ?? product.description
+  const bullets = product.bullets.map((b, i) => {
+    const key = `bullet ${i + 1}`
+    return byDimension.get(key)?.proposedText ?? b
   })
 
-  return msg.content[0].type === 'text' ? msg.content[0].text : ''
+  const changeLog = suggestions.map(s =>
+    `| ${s.dimension} | ${s.currentText.slice(0, 60).replace(/\|/g, '/')}… → ${s.proposedText.slice(0, 60).replace(/\|/g, '/')}… | ${s.guidelineCitation.slice(0, 80)} | ${s.competitorReference.slice(0, 80)} |`
+  ).join('\n')
+
+  return `# Content Update: ${product.id}
+
+## Final Content
+
+**Title**
+${title}
+
+**Bullet Points**
+${bullets.map((b, i) => `${i + 1}. ${b}`).join('\n')}
+
+**Description**
+${description}
+
+## Change Log
+
+| Field | Change | Guideline Cited | Competitor Referenced |
+|-------|--------|----------------|-----------------------|
+${changeLog}
+`
 }
