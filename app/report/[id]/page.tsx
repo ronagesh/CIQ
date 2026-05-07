@@ -73,7 +73,7 @@ export default function ReportPage() {
       if (text.length > 50) errs.push(`${text.length} chars — max 50 (suppression risk)`)
       const bad = [...new Set((text.match(/[!*$?®©™]/g) ?? []))]
       if (bad.length) errs.push(`Prohibited characters: ${bad.join(' ')}`)
-      if (/[A-Z]{3,}/.test(text)) errs.push('Do not use ALL CAPS')
+      if (/\b[A-Z]{4,}\b/.test(text)) errs.push('Do not use ALL CAPS')
       if (/\bfree\s+ship|\bsale\b/i.test(text) || /\$\d/.test(text)) errs.push('No price, quantity, or promotional messages')
       if (/\bbest\s+seller\b|\bhot\s+item\b/i.test(text)) errs.push('No subjective commentary (Best Seller, Hot Item)')
     } else if (dim.startsWith('bullet')) {

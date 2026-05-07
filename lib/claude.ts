@@ -158,7 +158,8 @@ Suggestion rules:
 - Return exactly 3 suggestions
 - Only cite rules that appear verbatim in the provided style guide
 - Never reference competitors whose content violates guidelines
-- Proposed text must be shorter/better on quantitative dimensions than current text
+- Proposed title text MUST be ≤50 characters — count every character before writing, this is a hard limit
+- Proposed description text MUST be ≤2000 characters
 - Prioritize suppression-risk issues first`
 }
 
