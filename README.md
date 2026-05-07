@@ -2,7 +2,7 @@
 
 Ally is a skill built for [CommerceIQ's](https://commerceiq.ai) AI teammate. It helps brand managers identify and fix Amazon listing content violations before they cause suppression — and benchmarks every SKU against its top competitors to surface the highest-impact improvements first.
 
-**Live:** https://ciq-ally.vercel.app &nbsp;|&nbsp; **Spec:** [docs/SPEC.md](docs/SPEC.md)
+**Live:** https://ciq-ally.vercel.app &nbsp;|&nbsp; **Spec:** [docs/SPEC.md](docs/SPEC.md) &nbsp;|&nbsp; **Product Doc:** [Google Doc](https://docs.google.com/document/d/1eU48MMkJr7bptv45RvPuj_6ug-7sSpvjXgE3ubYUN9g/edit)
 
 ---
 
