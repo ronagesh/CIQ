@@ -242,8 +242,14 @@ Audit this Amazon product image against the style guide rules. Return JSON:
   "competitorComparison": "${isProduct ? 'leave empty string' : `one sentence comparing this competitor image to standard guidelines, citing any specific text or element observed`}"
 }
 
-Check all of: white background, product occupies 80%+ of image area, no text/watermarks/borders/decorations ADDED TO THE PHOTO (overlays, sale badges, brand watermarks, floating callouts) — text or logos that are part of the physical product packaging are NOT violations, product clearly visible and identifiable.
-Do NOT flag: text printed on the product itself, symbols (®, ©, ™) on the product packaging, or lifestyle backgrounds that are simply the product's own colorful packaging. DO flag: non-white studio background behind the product, promotional text overlaid on the photo (e.g. "SALE", "FREE SHIPPING"), or watermarks added to the image.`,
+Check all of: white background, product occupies 80%+ of image area, no text/watermarks/borders/decorations ADDED TO THE PHOTO as a digital layer, product clearly visible and identifiable.
+
+CRITICAL DISTINCTION — only flag a violation if you are CERTAIN the text or graphic is a post-production digital overlay, not part of the physical packaging:
+- A true overlay looks like: a semi-transparent banner, a floating badge that doesn't follow the product's surface contour, a sticker-style callout with drop shadow, or text that appears to "float" in front of the product on the white background.
+- Product packaging text looks like: words/logos printed directly on a box, label, pouch, or canister that follow the surface curvature and share the same lighting/shadow as the product.
+
+DO flag: non-white studio background, a floating promotional badge or starburst in the white space around the product, a banner overlaid across the product, watermarks or logos added digitally outside the product's footprint.
+DO NOT flag: any text, logo, brand name, callout, or icon that is visibly part of the physical packaging surface — including text on box panels, pouch labels, canister lids, or shrink-wrap. When in doubt, do NOT flag.`,
               },
             ],
           }],
