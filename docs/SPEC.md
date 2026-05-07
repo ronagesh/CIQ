@@ -337,6 +337,54 @@ Suppression triggers: title character limit violation, prohibited chars in title
 
 ---
 
+## Hallucination risk and mitigation
+
+LLMs are used in three places in this product, each with different hallucination risk profiles and different mitigations in place.
+
+### Where LLMs are used
+
+| Step | Model | Risk |
+|------|-------|------|
+| Severity scoring (qualitative fallback) | Sonnet 4.6 | Low — grounded in style guide, output is a short structured JSON |
+| Analysis + suggestions | Sonnet 4.6 | Medium — generates free-text proposed copy and guideline citations |
+| Image compliance audit | Sonnet 4.6 vision | Medium-high — spatial reasoning about images is inherently less reliable |
+| Title shortening | Haiku 4.5 | Low — narrow single-task call with hard truncation fallback |
+| Brand/category enrichment | Haiku 4.5 | Low — one-off offline step, output is manually reviewable |
+
+### Mitigations currently in place
+
+**Grounding in the style guide** — every Claude call that produces suggestions or citations receives the full Amazon style guide in the system prompt and is explicitly instructed to only cite rules that appear verbatim in it. This reduces invented rule citations.
+
+**Structured output** — all LLM calls return JSON, not free text. The prompt specifies the exact schema. Malformed or non-JSON responses are caught and either retried (scoring) or silently dropped (analysis stream), rather than surfaced as content.
+
+**Hard rule checks before LLM** — the six most common and highest-stakes violations (title length, prohibited characters, missing images, etc.) are checked in code with zero LLM involvement. The LLM is only called for qualitative assessment when all deterministic checks pass. This means the highest-confidence severity labels never rely on model output.
+
+**Post-processing enforcement** — proposed titles are validated for length after the LLM responds. Any title over 50 characters is passed through a second focused call and then hard-truncated if still over limit. The model's output is never trusted unconditionally on this constraint.
+
+**User as final reviewer** — the most important mitigation is that no suggestion is applied automatically. The user reads every proposed edit, can modify it freely, sees inline violation flags if their edits break guidelines, and only generates the markdown export when satisfied. The product is a decision-support tool, not an autopilot.
+
+### Hallucination risks not yet mitigated
+
+**Invented competitor references** — the model is given competitor data in the prompt but can still misquote a competitor's rank, attribute the wrong title to a brand, or fabricate a statistic. There is currently no validation that the `competitorReference` text accurately reflects the data that was passed in.
+
+**Guideline citations** — the prompt instructs the model to only cite verbatim rules from the style guide, but there is no automated check that the `guidelineCitation` field in a suggestion actually matches any rule in `lib/style-guide.ts`. A hallucinated or paraphrased citation would not be caught.
+
+**Image compliance false positives/negatives** — vision models have the highest hallucination rate in this product. The prompt has been tuned to reduce false positives on packaging text, but there is no ground truth to validate against.
+
+### Production eval approach
+
+To move from prototype to production, we would instrument a feedback loop and periodic eval pipeline:
+
+**Implicit signal — edit rate** — every time a user modifies a proposed text before generating the markdown, that is a signal the suggestion was wrong or low quality. Tracking the edit rate per dimension (title, bullet, description) over time gives a leading indicator of suggestion quality without requiring explicit feedback.
+
+**Implicit signal — acceptance rate** — if a user expands a suggestion, reads it, and then generates markdown without editing it, that is a weak positive signal. Tracking the ratio of edited vs unedited accepted suggestions gives a quality score per model version.
+
+**LLM-as-judge evals** — periodically run a separate judge model (e.g. Opus) against a sample of Sonnet's outputs, asking it to evaluate: (1) does the guideline citation actually appear verbatim in the style guide? (2) does the proposed text comply with the cited rule? (3) does the competitor reference accurately reflect the competitor data provided? Failures get flagged for human review.
+
+**Fine-tuning / prompt iteration** — the edit rate and judge failures feed back into prompt improvements. Over time, pairs of (original suggestion, user-edited version) become a dataset for supervised fine-tuning or few-shot examples that teach the model what good suggestions look like for this specific product category and brand set.
+
+---
+
 ## Edge cases
 
 ### Data quality
