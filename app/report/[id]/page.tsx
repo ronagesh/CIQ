@@ -171,7 +171,7 @@ export default function ReportPage() {
 
       {/* Header */}
       <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/90 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-6 h-14 flex items-center gap-3">
+        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center gap-3">
           <button
             onClick={() => router.back()}
             className="w-8 h-8 flex items-center justify-center rounded-lg text-zinc-400 hover:text-zinc-700 hover:bg-zinc-100 transition-all flex-shrink-0"
@@ -179,7 +179,7 @@ export default function ReportPage() {
             <ArrowLeft className="w-4 h-4" />
           </button>
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-medium text-zinc-900 truncate leading-none mb-0.5">{meta.product.title}</p>
+            <p className="text-sm font-medium text-zinc-900 leading-snug mb-0.5">{meta.product.title}</p>
             <p className="text-xs text-zinc-400 leading-none">
               {meta.product.brand}
               <span className="mx-1.5 text-zinc-300">·</span>
