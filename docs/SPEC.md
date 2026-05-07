@@ -332,3 +332,67 @@ Fields: `product_id`, `title`, `universe`, `image_url`, `bullet_points`, `min_ra
 | Search terms | ≤250 chars total (5 fields × 50); single words; no title repeats |
 
 Suppression triggers: title character limit violation, prohibited chars in title, no images, image rule violations (can also cause account suspension).
+
+---
+
+## Edge cases
+
+### Data quality
+- **No competitors in category** — if a product's `categoryNode` returns zero matches, `getCompetitors` widens to the parent node (strips the last `›` segment). If that also returns nothing, the scorecard and competitor tile render with empty states. The analysis prompt notes "No ranked competitors available" and Claude frames suggestions purely as guideline compliance.
+- **Competitor with no search rank** — unranked competitors sort to the bottom of the competitor set. The scorecard still uses them for qualitative assessment but the competitor reference in suggestions avoids citing an unranked SKU as a benchmark.
+- **Product outranks all competitors** — the analysis prompt injects a note instructing Claude to frame suggestions as suppression-risk and compliance issues rather than competitive gaps, so suggestions don't read as "improve vs a worse competitor."
+- **Missing brand name** — products with an empty `retailer_brand_name` display as "(unknown)" throughout the UI. The brand dashboard only shows brands with non-empty names; products without one are invisible from the home screen. A search for such a product by ID also fails at the brand-selection step.
+- **Malformed CSV fields** — `image_url` and `bullet_points` are JSON arrays serialised as strings. `parseImages` and `parseBullets` fall back to treating the raw string as a single-element array if `JSON.parse` fails, so malformed rows degrade gracefully rather than crashing the loader.
+- **Image fetch timeout** — `fetchImageAsBase64` uses an 8-second `AbortSignal.timeout`. On timeout or non-200 response it returns `null` and that product is skipped from the image analysis results. The UI shows "No images available to analyze" if all fetches fail.
+- **Streaming parse failure** — the stream accumulates raw text and attempts one JSON parse at the end. If the model returns malformed JSON (truncated response, extra commentary outside the JSON block), the `try/catch` around the parse silently swallows the error and no `suggestions` or `scorecard` message is sent. The UI stays in the skeleton/empty state rather than crashing.
+- **Title shortener overshoot** — if the Haiku `shortenTitle` call still returns > 50 chars (rare), a word-boundary truncation regex clips it to the last whole word at or under 50 chars as a final safety net.
+- **LLM rate limits during seeding** — `scoreProduct` retries up to 4 times with exponential backoff (2s, 4s, 8s) on HTTP 429/529. Products that exhaust retries are logged as failures but don't abort the whole seed run; the rest of the batch still completes.
+
+### UI edge cases
+- **Very long titles in cards** — titles are clamped to 2 lines with a `title` tooltip for the full text. In the report header they're truncated with a CSS `truncate` class.
+- **Accordion state across navigation** — `expandedIdx` is local component state and resets on every report page load. There is no persistence of which accordion item was open.
+- **Regenerate after edit** — editing any textarea clears `markdown` state immediately. If the user then navigates away and back, the markdown is gone (no persistence). They must click Generate again.
+- **Competing violation flags** — if both "No ending punctuation" and "No exclamation points" are triggered by the same `!`, both flags render. This is intentional — each cites a separate guideline.
+
+---
+
+## Future optimisations (if launching to production)
+
+### Authentication and multi-tenancy
+The current build has no authentication. In production, brand selection would be gated behind a login so each brand manager only sees their own SKUs. The `/brand/[brand]` URL pattern would need to be protected — currently any user can view any brand by editing the URL.
+
+### Real-time data instead of a seeded CSV
+`data/scores.json` is a static cache written by a manual script. In production this would be replaced by:
+- A database (e.g. Postgres) storing products and scores
+- A background job that re-scores products on a schedule or when new data arrives
+- An API integration pulling live listing data directly from Amazon Selling Partner API (SP-API) instead of a CSV export
+
+### Incremental re-scoring
+The seed script re-scores every product on every run. With 67 products this takes ~2 minutes. At scale, a smarter approach would hash each product's content fields and only re-score rows where the hash has changed since the last run.
+
+### Caching image analysis
+Image compliance analysis is expensive — one vision API call per image, run fresh on every report page load. In production, results should be cached (keyed by image URL + a content hash) and invalidated only when the image changes. A simple key-value store (e.g. Vercel KV or Redis) would suffice.
+
+### Bulk export
+Currently the markdown export covers one SKU at a time. Brand managers typically want to export a full remediation brief for all high-severity SKUs in one go — a CSV or ZIP of markdown files, one per product.
+
+### Historical tracking
+There is no record of what a listing looked like before vs after Ally's suggestions were applied. In production, storing a snapshot of the listing content at audit time would allow a "before/after" view and let teams measure whether content scores improved after applying recommendations.
+
+### Confidence scoring on image compliance
+The image audit currently gives a binary pass/fail per check. A confidence score (high / medium / low) would reduce noise — a borderline background that is "mostly white but slightly off" is not the same risk as a product that is clearly on a lifestyle background.
+
+### Suggestion feedback loop
+There is no way for users to signal that a suggestion is wrong or unhelpful. A thumbs-down on a suggestion, fed back into a fine-tuning dataset or a system-prompt improvement loop, would improve quality over time.
+
+### Category breadth
+The current dataset covers one category (hydration/electrolytes). The style guide and scoring rules are written to be category-agnostic, but the competitor comparisons and Claude's framing of suggestions would be more accurate with category-specific context injected into the prompt (e.g. average title length norms differ significantly between Electronics and Grocery).
+
+### Search term audit
+The style guide includes rules for backend search terms (≤250 chars, no title repeats, single words) but Ally does not audit them. Search terms are not exposed in the current CSV export and would require SP-API access.
+
+### A+ content
+Amazon A+ content (enhanced brand content) has its own guidelines and significantly impacts conversion. Auditing A+ modules — image/text layout, headline length, comparison charts — is a natural extension of the current content audit scope.
+
+### Marketplace localisation
+The current rules are for Amazon US. UK, DE, FR, JP, and other marketplaces have different character limits (some use 80-char title limits), different prohibited character sets, and different suppression thresholds. Supporting multiple marketplaces would require a per-marketplace style guide layer.
