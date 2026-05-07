@@ -141,7 +141,7 @@ Return a JSON object:
       "currentText": "the current text for this dimension",
       "proposedText": "your ready-to-use replacement copy",
       "guidelineCitation": "Amazon [section] Guidelines: '[exact verbatim rule quote from the style guide]'. Seller Central URL if applicable.",
-      "competitorReference": "e.g. 'Liquid I.V. (avg search rank #3) achieves this at 47 characters while retaining brand, flavor, and pack size' — or compliance framing if SKU is top-ranked",
+      "competitorReference": "Synthesize a learning from the top 3 ranked competitors for this dimension. e.g. 'Hi-Lyte (#4), Gatorade (#9), and Gatorlyte (#14) all keep titles under 45 characters with brand, flavour, and pack size — none exceed 50 chars.' Focus on the pattern across the group, not a single brand. Use compliance framing if SKU is top-ranked.",
       "suppressionRisk": true | false,
       "suppressionConsequence": "brief description of Amazon enforcement consequence if violated, or empty string"
     }
