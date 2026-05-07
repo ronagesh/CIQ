@@ -268,7 +268,26 @@ Do NOT flag: text printed on the product itself, symbols (®, ©, ™) on the pr
   return results.filter((r): r is ImageAnalysis => r !== null)
 }
 
-// ── 5. Summary ─────────────────────────────────────────────────────────────────
+// ── 5. Title shortener (post-processing enforcement) ──────────────────────────
+
+export async function shortenTitle(title: string): Promise<string> {
+  const msg = await client.messages.create({
+    model: 'claude-haiku-4-5-20251001',
+    max_tokens: 64,
+    messages: [{
+      role: 'user',
+      content: `Shorten this Amazon product title to 50 characters or fewer. Keep brand, product type, and the most important attribute (flavor or size). Return ONLY the shortened title — no quotes, no explanation.
+
+Title: ${title}
+Character limit: 50
+Current length: ${title.length} chars`,
+    }],
+  })
+  const shortened = msg.content[0].type === 'text' ? msg.content[0].text.trim() : title
+  return shortened.length <= 50 ? shortened : shortened.slice(0, 50).replace(/\s\S*$/, '')
+}
+
+// ── 6. Summary ─────────────────────────────────────────────────────────────────
 
 export function generateSummary(
   product: Product,

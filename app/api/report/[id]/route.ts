@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { getCompetitors, getQuantitativeScores, avgQuantitative } from '@/lib/products'
 import { getProducts } from '@/lib/store'
-import { streamAnalysis } from '@/lib/claude'
+import { streamAnalysis, shortenTitle } from '@/lib/claude'
 
 export const maxDuration = 300
 
@@ -70,8 +70,17 @@ export async function GET(
         if (jsonMatch) {
           const parsed = JSON.parse(jsonMatch[0])
           if (parsed.suggestions) {
+            // Enforce 50-char title limit — LLMs miscounts, fix in code
+            const suggestions = await Promise.all(
+              parsed.suggestions.map(async (s: { dimension: string; proposedText: string }) => {
+                if (s.dimension.toLowerCase() === 'title' && s.proposedText.length > 50) {
+                  s.proposedText = await shortenTitle(s.proposedText)
+                }
+                return s
+              })
+            )
             controller.enqueue(new TextEncoder().encode(
-              JSON.stringify({ type: 'suggestions', suggestions: parsed.suggestions }) + '\n'
+              JSON.stringify({ type: 'suggestions', suggestions }) + '\n'
             ))
           }
           if (parsed.scorecard) {
