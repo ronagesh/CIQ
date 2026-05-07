@@ -12,7 +12,7 @@ Amazon listing suppression is silent and costly. A title that's one character to
 
 ## What Ally does
 
-Ally combines deterministic rule checks with AI analysis to give brand managers a prioritised, actionable content audit for every SKU in their portfolio.
+Ally combines deterministic rule checks with AI analysis to give brand managers a prioritized, actionable content audit for every SKU in their portfolio.
 
 1. **Brand dashboard** — select a brand and see all SKUs ranked by content severity. Each card shows the primary violation, suppression risk, and a Better / On par / Worse comparison to competitor averages across title, bullets, description, and images. Suppression risks surface first so the most urgent issues are always at the top.
 

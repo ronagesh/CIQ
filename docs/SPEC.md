@@ -227,7 +227,7 @@ After scoring, the top competitor by avg search rank (if any) is appended to the
 - Only cite rules that appear verbatim in the style guide
 - Proposed title ≤50 characters (prompt instruction; also enforced in post-processing)
 - Proposed description ≤2000 characters
-- Prioritise suppression-risk issues first
+- Prioritize suppression-risk issues first
 
 ---
 
@@ -319,7 +319,7 @@ Fields: `product_id`, `title`, `universe`, `image_url`, `bullet_points`, `min_ra
 - Raw dataset: 154 rows → deduplicated to 67 (richest row per `product_id` by field coverage score)
 - 15 products had missing `retailer_brand_name` → inferred via Claude Haiku from title + bullets
 - 1 product had missing `retailer_category_node` → inferred via Claude Haiku
-- Manual normalisation: "Liquid IV" → "Liquid I.V.", "Ultima" → "Ultima Replenisher", etc.
+- Manual normalization: "Liquid IV" → "Liquid I.V.", "Ultima" → "Ultima Replenisher", etc.
 
 ---
 
@@ -392,7 +392,7 @@ To move from prototype to production, we would instrument a feedback loop and pe
 - **Competitor with no search rank** — unranked competitors sort to the bottom of the competitor set. The scorecard still uses them for qualitative assessment but the competitor reference in suggestions avoids citing an unranked SKU as a benchmark.
 - **Product outranks all competitors** — the analysis prompt injects a note instructing Claude to frame suggestions as suppression-risk and compliance issues rather than competitive gaps, so suggestions don't read as "improve vs a worse competitor."
 - **Missing brand name** — the current dataset has been fully enriched so all 67 products have a brand name. However, if new products are added to the CSV without first running the enrichment script, any product with an empty `retailer_brand_name` will display as "(unknown)" and be invisible from the home screen — the brand dropdown only shows brands with non-empty names. Running `npx tsx scripts/enrich.ts` before re-seeding prevents this.
-- **Malformed CSV fields** — `image_url` and `bullet_points` are JSON arrays serialised as strings. `parseImages` and `parseBullets` fall back to treating the raw string as a single-element array if `JSON.parse` fails, so malformed rows degrade gracefully rather than crashing the loader.
+- **Malformed CSV fields** — `image_url` and `bullet_points` are JSON arrays serialized as strings. `parseImages` and `parseBullets` fall back to treating the raw string as a single-element array if `JSON.parse` fails, so malformed rows degrade gracefully rather than crashing the loader.
 - **Image fetch timeout** — `fetchImageAsBase64` uses an 8-second `AbortSignal.timeout`. On timeout or non-200 response it returns `null` and that product is skipped from the image analysis results. The UI shows "No images available to analyze" if all fetches fail.
 - **Streaming parse failure** — the stream accumulates raw text and attempts one JSON parse at the end. If the model returns malformed JSON (truncated response, extra commentary outside the JSON block), the `try/catch` around the parse silently swallows the error and no `suggestions` or `scorecard` message is sent. The UI stays in the skeleton/empty state rather than crashing.
 - **Title shortener overshoot** — if the Haiku `shortenTitle` call still returns > 50 chars (rare), a word-boundary truncation regex clips it to the last whole word at or under 50 chars as a final safety net.
@@ -406,7 +406,7 @@ To move from prototype to production, we would instrument a feedback loop and pe
 
 ---
 
-## Future optimisations (if launching to production)
+## Future optimizations (if launching to production)
 
 ### Authentication and multi-tenancy
 The current build has no authentication. In production, brand selection would be gated behind a login so each brand manager only sees their own SKUs. The `/brand/[brand]` URL pattern would need to be protected — currently any user can view any brand by editing the URL.
@@ -444,5 +444,5 @@ The style guide includes rules for backend search terms (≤250 chars, no title 
 ### A+ content
 Amazon A+ content (enhanced brand content) has its own guidelines and significantly impacts conversion. Auditing A+ modules — image/text layout, headline length, comparison charts — is a natural extension of the current content audit scope.
 
-### Marketplace localisation
+### Marketplace localization
 The current rules are for Amazon US. UK, DE, FR, JP, and other marketplaces have different character limits (some use 80-char title limits), different prohibited character sets, and different suppression thresholds. Supporting multiple marketplaces would require a per-marketplace style guide layer.
