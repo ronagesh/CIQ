@@ -1,21 +1,27 @@
 # Ally — Amazon Content Intelligence Dashboard
 
-Ally is a competitor content intelligence tool built for CommerceIQ. It audits Amazon product listing content against Amazon's style guidelines, benchmarks SKUs against competitors, and generates ready-to-use corrected copy.
+Ally is a skill built for [CommerceIQ's](https://commerceiq.ai) AI teammate. It helps brand managers identify and fix Amazon listing content violations before they cause suppression — and benchmarks every SKU against its top competitors to surface the highest-impact improvements first.
 
-**Live:** https://ciq-ally.vercel.app
+**Live:** https://ciq-ally.vercel.app &nbsp;|&nbsp; **Spec:** [docs/SPEC.md](docs/SPEC.md)
 
 ---
 
-## What it does
+## The problem
 
-1. **Brand dashboard** — select a brand, see all its SKUs ranked by content severity. Each issue card shows the primary violation, suppression risk, and a Better/Worse/On par comparison to competitor averages across title length, bullet count, description length, and image count.
+Amazon listing suppression is silent and costly. A title that's one character too long, a prohibited symbol, or a missing image can pull a product from search results with no warning. At the same time, even compliant listings often underperform because their content is weaker than competitors'. Brand managers catch these issues manually, slowly, and inconsistently across large SKU portfolios.
+
+## What Ally does
+
+Ally combines deterministic rule checks with AI analysis to give brand managers a prioritised, actionable content audit for every SKU in their portfolio.
+
+1. **Brand dashboard** — select a brand and see all SKUs ranked by content severity. Each card shows the primary violation, suppression risk, and a Better / On par / Worse comparison to competitor averages across title, bullets, description, and images. Suppression risks surface first so the most urgent issues are always at the top.
 
 2. **Report page** — drill into any SKU for a full audit:
-   - Three-panel top row: product info, ranked competitor set (clickable to their report), and a Claude-assessed content scorecard (Better / On par / Worse vs competitors).
-   - Three AI-generated improvement suggestions with current vs proposed copy, guideline citation, and competitor reference.
-   - Real-time violation flags as you edit proposed text.
-   - Image compliance audit with overlay vs packaging-surface distinction.
-   - One-click markdown export of the full content update.
+   - Three-panel top row: product info, ranked competitor set (each row is clickable to open that competitor's own report), and a Claude-assessed quality scorecard vs competitors.
+   - Three AI-generated improvement suggestions, each with current vs proposed copy, a verbatim Amazon guideline citation, and a synthesized learning from the top 3 ranked competitors.
+   - Real-time violation flags as you edit the proposed text — catching issues before you export.
+   - Image compliance audit distinguishing true digital overlays from on-package text.
+   - One-click markdown export using your exact edited text, no AI alteration.
 
 ---
 
